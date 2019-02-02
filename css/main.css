@@ -1,0 +1,212 @@
+@import url('https://rsms.me/inter/inter-ui.css');
+
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+
+
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter UI var alt', sans-serif; }
+}
+
+h1,h2,h3{
+    
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    color: #363636;
+
+}
+
+h4,h5,h6{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    color: #363636;
+}
+
+p,a,div,span{
+    font-family: 'Inter UI', sans-serif;
+   
+    color: #333;
+}
+
+
+
+.green{
+    color: #114F3A;
+}
+
+.red{
+    color: #F95F5F;
+}
+
+.dark-text{
+    
+    color: #f1f1f1;
+}
+
+.row-dark{
+    background-color: #f0f0f0;
+    background: #333;
+    
+}
+
+
+/* navbar customization starts here */
+.nav-link{
+  
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+
+color: #DADADA;
+}
+
+.bg-light {
+    background-color:#fff !important;
+}
+
+.navbar-light{
+    background-color: #fff !important;
+}
+
+@media (min-width:35em){
+    .navbar{
+        line-height: 3em;
+        padding: 0px;
+    }
+}
+
+.navbar-brand{
+    margin-right: 0;
+    margin-left: 0.5em;
+}
+
+.full-logo{
+    background: #F95F5F;
+   }
+
+.dod{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    padding:0 1rem 0 1rem;
+    font-size: 110%
+}
+
+.navbar-collapse ul{
+    margin-left: 1em;
+}
+
+/* navbar customization ends here */
+
+.footer-cont{
+    padding: 0 0 1.5rem 1rem;
+    margin: 0 0 0 0;
+}
+
+.footer-cont ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-item .nav-link.active{
+color: #F95F5F;
+font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: transparent;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("../img/menu.svg");
+    fill: #114F3A;
+}
+
+
+
+/* footer css starts here*/
+
+footer{
+    margin: 0;
+    padding: 0;
+    background: #222;
+    padding-top: 5%;
+}
+
+footer ul{
+   list-style: none;
+}
+
+.footer-links p{
+    
+    color: #e1e1e1;
+}
+
+.footer-links a{
+   
+    color: #e1e1e1;
+}
+
+.footer-foot p,a{
+   
+    color: #888;
+}
+.footer-name{
+    font-family: Inter UI;
+font-style: normal;
+font-weight: 800;
+
+
+
+color: #F95F5F;
+
+}
+
+
+.footer-address{
+    font-family: Inter UI;
+font-style: normal;
+font-weight: normal;
+line-height: normal;
+font-size: 12px;
+
+color: #DADADA;
+}
+
+.footer-link-head{
+    font-family: Inter UI;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+font-size: 14px;
+color: #9D9999;
+}
+.footer-link-link{
+    font-family: Inter UI;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: #C7C7C7;
+}
+
+/* footer css ends here */
+
+.round-img {
+    border-radius: 1rem !important;
+    object-fit: cover;
+    width: 100%;
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+.container-fluid,.row{
+margin: 0;
+padding: 0;
+}
+
+
+
