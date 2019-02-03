@@ -232,4 +232,7 @@ padding: 0;
 
 .img-profile{
     width: 7em;
+    object-fit: cover;
+    height: 7em;
+    border-radius: 50%;
 }
