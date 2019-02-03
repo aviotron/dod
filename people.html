@@ -78,15 +78,15 @@
                     </div>
                 </div>
                 
-                <ul class="nav justify-content-center">
+                <ul class="nav justify-content-center" id="myTab" role="tablist">
                         <li class="nav-item">
-                          <a class="nav-link active" href="#">Students</a>
+                          <a class="nav-link active" id="students-tab" data-toggle="tab" href="#students" role="tab" aria-controls="students">Students</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-dark" href="#">Faculty</a>
+                          <a class="nav-link text-dark" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab" aria-controls="faculty">Faculty</a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-dark" href="#">Staff</a>
+                          <a class="nav-link text-dark" id="staff-tab" data-toggle="tab" href="#staff" role="tab" aria-controls="staff">Staff</a>
                         </li>
                         <li class="nav-item">
                                 <a class="nav-link text-dark" href="#">Alumni</a>
@@ -97,42 +97,116 @@
 
         <!-- header section ends here -->
 
-        <div class="container">
+
+        <!-- section- batch group list starts here  -->
+
+        
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="students" role="tabpanel" aria-labelledby="students-tab">
+
+                    <!-- student groups starts -->
+                    <div class="container">
            
-            <div class="row">
-                <div class="col-lg-6 col-sm-12">
-                    <a href="people/people-students-mdes.html">
-                        <div class="photo-card">
-                                <div class="photo-background"></div>
-                                  <div class="photo-details">
-                                      <h2>M.Des</h2>
+                        /
+                    </div>
+
+                    <!-- student ends here -->
+
+            </div>
+            <div class="tab-pane fade" id="faculty" role="tabpanel" aria-labelledby="faculty-tab">
+
+                <!-- faculty starts here -->
+
+              <div class="container">
+                  <div class="row">
+                      <div class="col-12">
+                            <div class="row">
+                                    <div class="col-2">
+                                      <div class="list-group" id="list-tab" role="tablist">
+                                        <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                                        <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                                        <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                                        <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                                      </div>
+                                    </div>
+                                    <div class="col-8">
+                                      <div class="tab-content" id="nav-tabContent">
+                                        <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">...</div>
+                                        <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...</div>
+                                        <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...</div>
+                                        <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...</div>
+                                      </div>
+                                    </div>
                                   </div>
-                            </div>
-                        </a>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                        <a href="people/people-students-bdes.html">
-                        <div class="photo-card">
-                                <div class="photo-background"></div>
-                                  <div class="photo-details">
-                                      <h2>B.Des</h2>
-                                  </div>
-                            </div>
-                            </a>
-                </div>
-                <div class="col-lg-6 col-sm-12">
-                        <div class="photo-card">
-                                <div class="photo-background"></div>
-                                  <div class="photo-details">
-                                      <h2>PhD</h2>
-                                  </div>
-                            </div>
-                </div>
-                
+
+                      </div>
+                      <div class="col-6">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col">
+                                        <img src="img/suraj.png" alt="">
+                                    </div>
+                                    <div class="col">
+                                        <h5>Faculty-Name</h5>
+                                        <p>Head Of Department</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item">Call Letter for Presentation and Interview for IPDF</li>
+                            <li class="list-group-item">Short listed candidates for IPDF interview </li>
+                            <li class="list-group-item">DoD invites students from TEQIP mapped institutions to apply for internships under its faculty members. List of TEQIP mapped institutions</li>
+                            <li class="list-group-item">Shortlisting criteria for written test interview for Dec 2018 PhD admission
+                                </li>
+                            <li class="list-group-item">Sample call letter for PhD written test & interview.</li>
+                            <li class="list-group-item">DoD organizes a workshop on "Creative Mind Expressive Hands" - a five day workshop by Ms.Sushma Chakravarty </li>
+                            <li class="list-group-item">Details of admissions announcement for year 2017-2018 </li>
+                            <li class="list-group-item">Details of "Training Programme and Project Management" by Ministry of Heavy Industries and Public Enterprises</li>
+                            <li class="list-group-item">Admission procedure for Undergraduate Common Entrance Examination (UCEED) for B.Des 2017</li>
+                           
+                          </ul>
+                      </div>
+                      <div class="col-3">
+
+                      </div>
+                  </div>
+              </div>
+
+
+                <!-- faculty ends here -->
 
 
             </div>
-        </div>
+
+            <div class="tab-pane fade" id="staff" role="tabpanel" aria-labelledby="staff-tab">
+
+                <!-- faculty starts here -->
+
+              
+
+
+                <!-- faculty ends here -->
+
+
+            </div>
+
+            <div class="tab-pane fade" id="alumni" role="tabpanel" aria-labelledby="alumni-tab">
+
+                <!-- faculty starts here -->
+
+              
+
+
+                <!-- faculty ends here -->
+
+
+            </div>
+            
+    </div>
+
+        <!-- section-batch group list end here -->
+
+  
 
 
         

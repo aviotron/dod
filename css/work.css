@@ -1,0 +1,27 @@
+.photo-card {
+    background-color: #2d3638;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+   
+}
+
+.photo-card h4{
+    color: #fff;
+}
+
+  
+.photo-background{
+    
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+    }
+
+    .photo-background img{
+        object-fit: cover;
+        border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    min-height: 250px;
+    }

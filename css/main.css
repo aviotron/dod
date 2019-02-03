@@ -64,6 +64,9 @@ color: #DADADA;
     background-color:#fff !important;
 }
 
+.bg-grey{
+    background-color:#f2f2f2;
+}
 .navbar-light{
     background-color: #fff !important;
 }
@@ -210,3 +213,19 @@ padding: 0;
 
 
 
+.profile-small img{
+    width: 3em;
+    height: 3em;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.media img{
+    width: 7em;
+    height: 7em;
+    object-fit: cover;
+}
+
+.full-logo{
+    margin-left: .5em;
+}
