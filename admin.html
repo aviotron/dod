@@ -10,11 +10,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
 
-
   <!-- main css for all pages -->
   <link rel="stylesheet" href="css/main.css" />
-
-
 
   <title>Admin-DOD</title>
 
@@ -189,18 +186,18 @@
                     </select>
                   </div>
                   <div class="form-group col-12">
-                      <label for="inputProgram" class="small">Program</label>
-                      <select id="inputProgram" class="form-control">
-                        <option selected>Masters</option>
-                        <option>Bachelors</option>
-                        <option>PhD</option>
-                      </select>
-                    </div>
-                    <div class="form-group col-6">
-                        <label for="inputarea" class="small">Year Of Joining</label>
-                        <input type="number" class="form-control" id="inputarea" placeholder="Year Of Joining">
-                    </div>
-                    
+                    <label for="inputProgram" class="small">Program</label>
+                    <select id="inputProgram" class="form-control">
+                      <option selected>Masters</option>
+                      <option>Bachelors</option>
+                      <option>PhD</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-6">
+                    <label for="inputarea" class="small">Year Of Joining</label>
+                    <input type="number" class="form-control" id="inputarea" placeholder="Year Of Joining">
+                  </div>
+
                 </div>
                 <hr>
                 <div class="form-row">
@@ -219,8 +216,8 @@
                   </div>
                 </div>
 
-               
-                
+
+
                 <div class="form-row">
                   <div class="form-group col-md-12">
                     <label for="inputEmail4" class="small">Email</label>
@@ -231,8 +228,8 @@
                     <input type="text" class="form-control" id="inputimageurl" placeholder="Image URL">
                   </div>
                   <div class="form-group col-md-12">
-                      <label for="inputarea" class="small">Interest Areas</label>
-                      <input type="text" class="form-control" id="inputarea" placeholder="Interest Areas">
+                    <label for="inputarea" class="small">Interest Areas</label>
+                    <input type="text" class="form-control" id="inputarea" placeholder="Interest Areas">
                   </div>
                 </div>
                 <hr>
@@ -286,6 +283,90 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+       <!-- event modal -->
+       <div class="modal fade" tabindex="-1" role="dialog" id="event-modal" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Create an event</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+  
+                <form>
+                  <div class="form-row">
+                    <div class="form-group col-12">
+                      <label for="inputType" class="small">Type</label>
+                      <select id="inputType" class="form-control">
+                        <option selected>Notice</option>
+                        <option>Achievement</option>
+                        <option>Annoucement</option>
+                        <option>Event</option>
+
+                      </select>
+                    </div>
+                    <div class="form-group col-12">
+                        <label for="inputdate" class="small">Posted On</label>
+                        <input type="date" class="form-control" id="inputdate" placeholder="">
+                      </div>
+
+
+                 
+  
+                  </div>
+                  <hr>
+
+                  <div class="form-row">
+                      <div class="form-group col-6">
+                          <label for="inputsdate" class="small">Start Date</label>
+                          <input type="date" class="form-control" id="inputsdate" placeholder="">
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputedate" class="small">End Date</label>
+                            <input type="date" class="form-control" id="inputedate" placeholder="">
+                          </div>
+                  </div>
+                  <hr>
+                  <div class="form-row">
+  
+                    <div class="form-group col-12">
+                      <label for="inputtitle" class="small">Title</label>
+                      <input type="text" class="form-control" id="inputtitle" placeholder="Title">
+                    </div>
+                    <div class="form-group col-12">
+                      <label for="inputDescription" class="small">Description</label>
+                      <input type="text" class="form-control" id="inputDescription" placeholder="Description">
+                    </div>
+                    <div class="form-group col-md-12">
+                        <label for="inputimageurl" class="small">Image URL</label>
+                        <input type="text" class="form-control" id="inputimageurl" placeholder="Image URL">
+                      </div>
+                  </div>
+  
+  
+  
+                  
+             
+  
+  
+                </form>
+  
+  
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
 
@@ -390,7 +471,7 @@
                 <h3>Events</h3>
               </div>
               <div class="col-auto pt-3">
-                <a href="">
+                <a href="" data-toggle="modal" data-target="#event-modal">
                   <ion-icon name="add-circle" size="large"></ion-icon>
                 </a>
               </div>
@@ -503,10 +584,7 @@
           </div>
           <div class="col-12 ">
             <ul class="list-group overflow-auto" style="max-height: 30em;">
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                Avinash Sharma
-                <span class="badge badge-primary badge-pill">student</span>
-              </li>
+
               <li class="list-group-item d-flex justify-content-between align-items-center">
                 Avinash Sharma
                 <span class="badge badge-primary badge-pill">student</span>
@@ -657,36 +735,6 @@
 
   </footer>
   <!-- footer ends -->
-
-  <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyCWw03p-f6kZBbycBYzaJy65zIUTPe05II",
-      authDomain: "iitg-dod.firebaseapp.com",
-      databaseURL: "https://iitg-dod.firebaseio.com",
-      projectId: "iitg-dod",
-      storageBucket: "iitg-dod.appspot.com",
-      messagingSenderId: "802147720984"
-    };
-    firebase.initializeApp(config);
-  </script>
-
-  <script>
-    db.collection("cities").doc("LA").set({
-      name: "Los Angeles",
-      state: "CA",
-      country: "USA"
-    })
-      .then(function () {
-        console.log("Document successfully written!");
-      })
-      .catch(function (error) {
-        console.error("Error writing document: ", error);
-      });
-
-  </script>
-
 
 
   <!-- Optional JavaScript -->
