@@ -25,3 +25,11 @@
     border-top-right-radius: 10px;
     min-height: 250px;
     }
+
+    .card-body{
+padding: 0;
+    }
+
+    .card-content{
+        padding: 1.25rem;
+    }
