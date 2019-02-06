@@ -131,13 +131,22 @@ color: #DADADA;
     padding: 0px;
     margin: 0px;
 }
-.navtab a{
-    color: #202124;
+.navtab .nav-link{
+    color: #5f6368;
+    font-family: 'Manrope',sans-serif;
+    transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    
 }
+
+.navtab .nav-link:hover{
+    color: #202124;
+    
+    
+}
+
 .navtab .nav-link.active{
     color: #F95F5F;
-    font-weight: bold;
-
+    
 }
 
 .navtop a{
