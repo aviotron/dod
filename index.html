@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
     crossorigin="anonymous">
 
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- main css for all pages -->
   <link rel="stylesheet" href="css/main.css" />
 
@@ -24,57 +24,59 @@
 <body>
 
   <!-- nav starts -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="img/iitg_logo.png.png" width="30" height="30" alt="">
-
-      </a>
-      <a class="navbar-brand full-logo" href="index.html">
-        <span class="dod">DOD</span>
-      </a>
-
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navtop">
+      <div class="container">  
+        <a class="navbar-brand" href="index.html">
+                <img src="img/iitg_logo.png.png" width="30" height="30" alt="">
+                
+        </a>
+        <a class="navbar-brand full-logo" href="index.html">
+            <span class="dod">DOD</span>
+        </a>
+        
+        
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse  justify-content-center" id="navbarTogglerDemo02">
-        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-center">
-          <li class="nav-item dod-logo">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
+         <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-center">
+            <li class="nav-item dod-logo">
+            <a class="nav-link " href="index.html">Home</a>
+            </li>
 
-          <li class="nav-item dod-logo">
-            <a class="nav-link " href="work.html">Work</a>
-          </li>
+            <li class="nav-item dod-logo">
+                    <a class="nav-link " href="work.html">Work</a>
+            </li>
 
-          <li class="nav-item dod-logo">
-            <a class="nav-link " href="people.html">People</a>
-          </li>
+            <li class="nav-item dod-logo">
+                    <a class="nav-link " href="people.html">People</a>
+            </li>
 
-          <li class="nav-item dod-logo">
-            <a class="nav-link " href="news.html">News & Events</a>
-          </li>
+            <li class="nav-item dod-logo">
+                    <a class="nav-link " href="news.html">News & Events</a>
+            </li>
 
-          <li class="nav-item dod-logo">
-            <a class="nav-link " href="about.html">Academics</a>
-          </li>
+            <li class="nav-item dod-logo">
+                    <a class="nav-link " href="academics.html">Academics</a>
+            </li>
 
-          <li class="nav-item dod-logo">
-            <a class="nav-link " href="about.html">About</a>
-          </li>
+            <li class="nav-item dod-logo">
+                    <a class="nav-link active" href="about.html">About</a>
+            </li>
         </ul>
       </div>
     </div>
-  </nav>
-  <!-- nav ends -->
-
+    </nav>
+<!-- nav ends -->
+    <div class="colorline"></div>
+</div>
+<!-- nav ends -->
 
 
   <!-- content starts -->
-  <div class="container-fluid main-container">
+  <div class="container-fluid main-container" data-aos="fade-down">
 
     <!-- hero-carousel starts -->
     <div class="container-fluid">
@@ -333,6 +335,11 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 
 </body>

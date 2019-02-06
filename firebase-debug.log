@@ -1,0 +1,232 @@
+[debug] [2019-02-06T11:30:43.086Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T11:30:43.094Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avinash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-02-06T11:30:43.095Z] CLI Version:   6.3.1
+[debug] [2019-02-06T11:30:43.095Z] Platform:      win32
+[debug] [2019-02-06T11:30:43.095Z] Node Version:  v10.15.0
+[debug] [2019-02-06T11:30:43.099Z] Time:          Wed Feb 06 2019 17:00:43 GMT+0530 (India Standard Time)
+[debug] [2019-02-06T11:30:43.099Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T11:30:43.158Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T11:30:43.161Z] > authorizing via signed-in user
+[debug] [2019-02-06T11:30:43.161Z] [iam] checking project iitg-dod for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T11:30:43.168Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-02-06T11:30:43.169Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-02-06T11:30:43.960Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:30:43.992Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iitg-dod:testIamPermissions  
+
+[debug] [2019-02-06T11:30:46.199Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:30:46.206Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iitg-dod  
+ 
+[debug] [2019-02-06T11:30:47.427Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'iitg-dod'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T11:30:47.447Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/iitg-dod/versions  
+
+[debug] [2019-02-06T11:30:49.884Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T11:30:49.885Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T11:30:49.909Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 11:30:49 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/iitg-dod/versions",
+        "path": "/v1beta1/sites/iitg-dod/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/iitg-dod/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T11:31:02.148Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T11:31:02.153Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avinash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-02-06T11:31:02.153Z] CLI Version:   6.3.1
+[debug] [2019-02-06T11:31:02.153Z] Platform:      win32
+[debug] [2019-02-06T11:31:02.153Z] Node Version:  v10.15.0
+[debug] [2019-02-06T11:31:02.155Z] Time:          Wed Feb 06 2019 17:01:02 GMT+0530 (India Standard Time)
+[debug] [2019-02-06T11:31:02.155Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T11:31:02.177Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T11:31:02.179Z] > authorizing via signed-in user
+[debug] [2019-02-06T11:31:02.179Z] [iam] checking project iitg-dod for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T11:31:02.184Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iitg-dod:testIamPermissions  
+
+[debug] [2019-02-06T11:31:04.435Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:31:04.440Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iitg-dod  
+ 
+[debug] [2019-02-06T11:31:05.243Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'iitg-dod'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T11:31:05.257Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/iitg-dod/versions  
+
+[debug] [2019-02-06T11:31:07.495Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T11:31:07.495Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T11:31:07.511Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 11:31:06 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/iitg-dod/versions",
+        "path": "/v1beta1/sites/iitg-dod/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/iitg-dod/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
+[debug] [2019-02-06T11:34:05.375Z] ----------------------------------------------------------------------
+[debug] [2019-02-06T11:34:05.379Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\avinash\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2019-02-06T11:34:05.379Z] CLI Version:   6.3.1
+[debug] [2019-02-06T11:34:05.379Z] Platform:      win32
+[debug] [2019-02-06T11:34:05.379Z] Node Version:  v10.15.0
+[debug] [2019-02-06T11:34:05.380Z] Time:          Wed Feb 06 2019 17:04:05 GMT+0530 (India Standard Time)
+[debug] [2019-02-06T11:34:05.381Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-02-06T11:34:05.396Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-02-06T11:34:05.397Z] > authorizing via signed-in user
+[debug] [2019-02-06T11:34:05.397Z] [iam] checking project iitg-dod for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2019-02-06T11:34:05.400Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iitg-dod:testIamPermissions  
+
+[debug] [2019-02-06T11:34:07.637Z] <<< HTTP RESPONSE 200
+[debug] [2019-02-06T11:34:07.643Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iitg-dod  
+ 
+[debug] [2019-02-06T11:34:08.548Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'iitg-dod'...
+[info] 
+[info] i  deploying hosting
+[debug] [2019-02-06T11:34:08.570Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/iitg-dod/versions  
+
+[debug] [2019-02-06T11:34:10.698Z] <<< HTTP RESPONSE 500
+[debug] [2019-02-06T11:34:10.698Z] <<< HTTP RESPONSE BODY
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2019-02-06T11:34:10.719Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500,
+    "body": {
+      "error": {
+        "code": 500,
+        "message": "Internal error encountered.",
+        "status": "INTERNAL"
+      }
+    },
+    "headers": {
+      "vary": "X-Origin, Referer, Origin,Accept-Encoding",
+      "content-type": "application/json; charset=UTF-8",
+      "date": "Wed, 06 Feb 2019 11:34:09 GMT",
+      "server": "ESF",
+      "cache-control": "private",
+      "x-xss-protection": "1; mode=block",
+      "x-frame-options": "SAMEORIGIN",
+      "x-content-type-options": "nosniff",
+      "alt-svc": "quic=\":443\"; ma=2592000; v=\"44,43,39\"",
+      "accept-ranges": "none",
+      "transfer-encoding": "chunked"
+    },
+    "request": {
+      "uri": {
+        "protocol": "https:",
+        "slashes": true,
+        "auth": null,
+        "host": "firebasehosting.googleapis.com",
+        "port": 443,
+        "hostname": "firebasehosting.googleapis.com",
+        "hash": null,
+        "search": null,
+        "query": null,
+        "pathname": "/v1beta1/sites/iitg-dod/versions",
+        "path": "/v1beta1/sites/iitg-dod/versions",
+        "href": "https://firebasehosting.googleapis.com/v1beta1/sites/iitg-dod/versions"
+      },
+      "method": "POST"
+    }
+  }
+}
