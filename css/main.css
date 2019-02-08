@@ -367,3 +367,9 @@ padding: 0;
     -webkit-animation-delay: 0.3s;
     
 }
+
+.bg-svg{
+    background-image: url(../img/trianglify.svg);
+    background-position: center;
+    background-size: cover;
+}
