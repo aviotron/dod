@@ -373,3 +373,11 @@ padding: 0;
     background-position: center;
     background-size: cover;
 }
+
+.bg-text-highlight{
+background-color: #005599;
+}
+
+.shadow-subtle{
+    box-shadow: 0 3px 7px 1px #40494a1f;
+}
