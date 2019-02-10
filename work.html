@@ -298,58 +298,68 @@
 
         <!-- publication tab content -->
         <div class="tab-pane fade show" id="tab2" role="tabpanel" aria-labelledby="tab2">
-            <div class="container pb-4">
+            <div class="container pb-4 pt-3">
 
                 <div class="row">
-                    <div class="dropdown d-lg-none col-sm-12">
-                        <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Highlights
-                        </a>
-
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Recent</a>
-                            <a class="dropdown-item" href="#">Ongoing</a>
-                            <a class="dropdown-item" href="#">Completed</a>
-                        </div>
-                    </div>
-                    <!-- side nav -->
-                    <div class="col-lg-2 col-sm-12 pt-4 ">
-                        <ul class="nav flex-column  ">
-                            <li class="nav-item">
-                                <a class="nav-link active " href="#">Highlights</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Recent</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Ongoing</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="#">Completed</a>
-                            </li>
-                            <li class="nav-item d-none">
-
-                                <div class="dropdown  col-sm-12">
-                                    <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                        Highlights
-                                    </a>
-
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Recent</a>
-                                        <a class="dropdown-item" href="#">Ongoing</a>
-                                        <a class="dropdown-item" href="#">Completed</a>
-                                    </div>
+                        <div class="dropdown d-lg-none text-center col-sm-12">
+                                <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Highlights
+                                </a>
+        
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Recent</a>
+                                    <a class="dropdown-item" href="#">Ongoing</a>
+                                    <a class="dropdown-item" href="#">Completed</a>
                                 </div>
-
-                            </li>
-
-                        </ul>
-
-
-
-                    </div>
+                            </div>
+                            <!-- side nav -->
+                            <div class="col-lg-2 col-sm-12 pt-4 d-none d-lg-block">
+                                <ul class="nav flex-column sidenav ">
+                                   
+                                    <li class="nav-item">
+                                        <a class="nav-link active" href="#">Highlights</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Recent</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Ongoing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link " href="#">Completed</a>
+                                    </li>
+                                    <li class="nav-item d-none">
+        
+                                        <div class="dropdown  col-sm-12">
+                                            <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Highlights
+                                            </a>
+        
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <a class="dropdown-item" href="#">Recent</a>
+                                                <a class="dropdown-item" href="#">Ongoing</a>
+                                                <a class="dropdown-item" href="#">Completed</a>
+                                            </div>
+                                        </div>
+        
+                                    </li>
+                                    <hr>
+                                    <li>
+                                            <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#PublicationModal">
+                                                   <div class="small font-weight-bold text-white"> +New publication</div>
+                                            </button>
+                                    </li>
+                                    
+        
+                                </ul>
+        
+                                
+        
+        
+        
+                            </div>
 
                     <!-- content -->
 
@@ -359,7 +369,7 @@
                         <div class="row">
 
                             <div class="col-12 mt-4">
-                                <div class="card">
+                                <div class="card card-content">
                                     <div class="card-body">
 
                                         <h6 class="card-title">O-The story</h6>
@@ -368,7 +378,7 @@
 
                                         </div>
 
-                                        <span class="badge badge-pill badge-light pb-2">23 Feb 2019</span>
+                                        <b>23 Dec </b>2019
 
                                     </div>
                                 </div>
@@ -398,7 +408,7 @@
     <!-- tab content ends -->
 
 
-
+    <!-- modal project -->
     <div class="modal fade" id="ProjectModal" role="dialog" aria-labelledby="ProjectModalLAbel" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
@@ -431,6 +441,62 @@
                         <div class="form-group">
                                 <label for="description">Description</label>
                                 <textarea class="form-control" id="description" rows="3"></textarea>
+                              </div>
+                 </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button submit" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- modal publication -->
+    <div class="modal fade" id="PublicationModal" role="dialog" aria-labelledby="PublicationModalLAbel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Add New Publication</h5>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                 <form action="">
+
+                        <div class="form-row">
+  
+                                <div class="form-group col-12">
+                                  <label for="inputtitle" class="small">Title</label>
+                                  <input type="text" class="form-control" id="inputtitle" placeholder="Title">
+                                </div>
+                               
+                                <div class="form-group col-md-12">
+                                    <label for="inputimageurl" class="small">Image URL</label>
+                                    <input type="text" class="form-control" id="inputimageurl" placeholder="Image URL">
+                                  </div>
+                                  <div class="form-group col-md-12">
+                                        <label for="inputtag" class="small">Tags (comma separated)</label>
+                                        <input type="text" class="form-control" id="inputtag" placeholder="Enter tags separated by comma">
+                                      </div>
+                        </div>
+                        <div class="form-group">
+                                <label for="description">Description</label>
+                                <textarea class="form-control" id="description" rows="3"></textarea>
+                              </div>
+                              <div class="form-group">
+                                  
+                                <div class="form-group col-12">
+                                        <label for="inputauthor" class="small">Author</label>
+                                        <input type="text" class="form-control" id="inputauthor" placeholder="Author">
+                                      </div>
+                                     
+                                      <div class="form-group col-md-12">
+                                          <label for="inputunder" class="small">Under</label>
+                                          <input type="text" class="form-control" id="inputunder" placeholder="publication done under">
+                                        </div>
                               </div>
                  </form>
                 </div>
