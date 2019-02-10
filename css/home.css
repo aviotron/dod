@@ -202,9 +202,7 @@ primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.d
 }
 .carousel-caption h4{
     color: white;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    
 
 }
 
