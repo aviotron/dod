@@ -4,3 +4,13 @@
 
 }
 
+.list-group-flush{
+    line-height: 1.2;
+}
+
+.list-group-flush a{
+
+    font-size: 95%;
+    line-height: 1.2;
+
+}

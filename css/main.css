@@ -54,7 +54,9 @@ p,a,div,span{
     background: #333;
     
 }
-
+a{
+    color: #252d2e;
+}
 
 /* navbar customization starts here */
 .colorline2{
@@ -203,6 +205,11 @@ color: #DADADA;
     
 }
 
+.activeLink{
+    color: #F95F5F;
+    
+    
+}
 .navtop a{
 font-family: 'Manrope', sans-serif;
 }
@@ -256,8 +263,12 @@ footer ul{
     color: #e1e1e1;
 }
 
-.footer-foot p,a{
+.footer-foot p{
    
+    color: #888;
+}
+
+.footer-foot a{
     color: #888;
 }
 .footer-name{
@@ -268,6 +279,14 @@ font-weight: 800;
 
 
 color: #F95F5F;
+
+}
+
+.sub-text{
+    font-size: 80%;
+    color: rgba(72, 78, 78, 0.637);
+    letter-spacing: 0.1em;
+    
 
 }
 
