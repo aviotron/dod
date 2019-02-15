@@ -1,150 +1,178 @@
 @import url('https://rsms.me/inter/inter-ui.css');
-
 @import url('https://fonts.googleapis.com/css?family=Lato:900');
 /* @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700'); */
 
 @font-face {
     font-family: 'Manrope';
-    src: url('../font/manrope-semibold.woff2') format('woff2'),
-         url('../font/manrope-semibold.woff') format('woff'),
-         url('../font/manrope-semibold.ttf') format('truetype');
-         
-  }
+    src: url('../font/manrope-semibold.woff2') format('woff2'), url('../font/manrope-semibold.woff') format('woff'), url('../font/manrope-semibold.ttf') format('truetype');
+}
 
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter UI var alt', sans-serif; }
+    html {
+        font-family: 'Inter UI var alt', sans-serif;
+    }
 }
 
-h1,h2,h3{
-    
-    font-family: 'Manrope', sans-serif;
-    font-weight: 900;
-    color: #373b48;
-
-}
-
-h4,h5,h6{
-    font-family: 'Manrope', sans-serif;
-    font-weight: 700;
-    color:#373b48;
-}
-
-p,a,div,span{
+h1, h2, h3 {
     font-family: 'Inter UI', sans-serif;
-    color:#5f6368;
+    font-weight: 700;
+    color: #373b48;
 }
 
+h4, h5, h6 {
+    font-family: 'Inter UI', sans-serif;
+    font-weight: 700;
+    color: #373b48;
+}
 
-.green{
+p, a, div, span {
+    font-family: 'Inter UI', sans-serif;
+    color: #5f6368;
+}
+
+.green {
     color: #114F3A;
 }
 
-.red{
+.red {
     color: #F95F5F;
 }
 
-.dark-text{
-    
+.dark-text {
     color: #f1f1f1;
 }
 
-.row-dark{
+.row-dark {
     background-color: #f0f0f0;
     background: #333;
-    
 }
-a{
+
+a {
     color: #252d2e;
 }
 
 /* navbar customization starts here */
-.colorline2{
-    
-    background: rgba(246,129,33,1);
-    background: -moz-linear-gradient(left, rgba(246,129,33,1) 0%, rgba(0,167,97,1) 25%, rgba(0,85,153,1) 50%, rgba(153,26,151,1) 75%, rgba(128,0,21,1) 99%, rgba(128,0,21,1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(246,129,33,1)), color-stop(25%, rgba(0,167,97,1)), color-stop(50%, rgba(0,85,153,1)), color-stop(75%, rgba(153,26,151,1)), color-stop(99%, rgba(128,0,21,1)), color-stop(100%, rgba(128,0,21,1)));
-    background: -webkit-linear-gradient(left, rgba(246,129,33,1) 0%, rgba(0,167,97,1) 25%, rgba(0,85,153,1) 50%, rgba(153,26,151,1) 75%, rgba(128,0,21,1) 99%, rgba(128,0,21,1) 100%);
-    background: -o-linear-gradient(left, rgba(246,129,33,1) 0%, rgba(0,167,97,1) 25%, rgba(0,85,153,1) 50%, rgba(153,26,151,1) 75%, rgba(128,0,21,1) 99%, rgba(128,0,21,1) 100%);
-    background: -ms-linear-gradient(left, rgba(246,129,33,1) 0%, rgba(0,167,97,1) 25%, rgba(0,85,153,1) 50%, rgba(153,26,151,1) 75%, rgba(128,0,21,1) 99%, rgba(128,0,21,1) 100%);
-    background: linear-gradient(to right, rgba(246,129,33,1) 0%, rgba(0,167,97,1) 25%, rgba(0,85,153,1) 50%, rgba(153,26,151,1) 75%, rgba(128,0,21,1) 99%, rgba(128,0,21,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68121', endColorstr='#800015', GradientType=1 );
-    
+
+.colorline2 {
+    background: rgba(246, 129, 33, 1);
+    background: -moz-linear-gradient(left, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(246, 129, 33, 1)), color-stop(25%, rgba(0, 167, 97, 1)), color-stop(50%, rgba(0, 85, 153, 1)), color-stop(75%, rgba(153, 26, 151, 1)), color-stop(99%, rgba(128, 0, 21, 1)), color-stop(100%, rgba(128, 0, 21, 1)));
+    background: -webkit-linear-gradient(left, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
+    background: -o-linear-gradient(left, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
+    background: linear-gradient(to right, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68121', endColorstr='#800015', GradientType=1);
     width: 100%;
     height: 2px;
     -webkit-animation: AnimationName 2s ease infinite;
     -moz-animation: AnimationName 2s ease infinite;
     animation: AnimationName 2s ease infinite;
-    
-   
-    }
+}
 
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 13%}
-        50%{background-position:100% 88%}
-        100%{background-position:0% 13%}
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 13%
     }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 13%}
-        50%{background-position:100% 88%}
-        100%{background-position:0% 13%}
+    50% {
+        background-position: 100% 88%
     }
-    @keyframes AnimationName {
-        0%{background-position:0% 13%}
-        50%{background-position:100% 88%}
-        100%{background-position:0% 13%}
+    100% {
+        background-position: 0% 13%
     }
-    
+}
 
-    .colorline{
-        width: 100%;
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 13%
+    }
+    50% {
+        background-position: 100% 88%
+    }
+    100% {
+        background-position: 0% 13%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 13%
+    }
+    50% {
+        background-position: 100% 88%
+    }
+    100% {
+        background-position: 0% 13%
+    }
+}
+
+.colorline {
+    width: 100%;
     height: 2px;
-        background: linear-gradient(273deg, #f68121, #00a761, #005599, #991a97, #800015);
-        background-size: 1000% 1000%;
-        
-        -webkit-animation: AnimationName 10s ease infinite;
-        -moz-animation: AnimationName 10s ease infinite;
-        animation: AnimationName 10s ease infinite;
-        
-        
-    }
-    @-webkit-keyframes AnimationName {
-        0%{background-position:0% 13%}
-        50%{background-position:100% 88%}
-        100%{background-position:0% 13%}
-    }
-    @-moz-keyframes AnimationName {
-        0%{background-position:0% 13%}
-        50%{background-position:100% 88%}
-        100%{background-position:0% 13%}
-    }
-    @keyframes AnimationName {
-        0%{background-position:0% 13%}
-        50%{background-position:100% 88%}
-        100%{background-position:0% 13%}
-    }
-.nav-link{
-  
-font-style: normal;
-font-weight: normal;
-line-height: normal;
+    background: linear-gradient(273deg, #f68121, #00a761, #005599, #991a97, #800015);
+    background-size: 1000% 1000%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
 
-color: #DADADA;
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 13%
+    }
+    50% {
+        background-position: 100% 88%
+    }
+    100% {
+        background-position: 0% 13%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 13%
+    }
+    50% {
+        background-position: 100% 88%
+    }
+    100% {
+        background-position: 0% 13%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 13%
+    }
+    50% {
+        background-position: 100% 88%
+    }
+    100% {
+        background-position: 0% 13%
+    }
+}
+
+.nav-link {
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    color: #DADADA;
 }
 
 .bg-light {
-    background-color:#fff !important;
-}
-
-.bg-grey{
-    background-color:#f2f2f2;
-}
-.navbar-light{
     background-color: #fff !important;
 }
 
-@media (max-width:35em){
-    .navbar{
+.bg-grey {
+    background-color: #f2f2f2;
+}
+
+.navbar-light {
+    background-color: #fff !important;
+}
+
+@media (max-width:35em) {
+    .navbar {
         line-height: 3em;
         padding: 0px;
     }
@@ -155,81 +183,77 @@ color: #DADADA;
     }
 }
 
-.navbar-brand{
+.navbar-brand {
     margin-right: 0;
     margin-left: 1em;
 }
 
-.full-logo{
+.full-logo {
     background: #F95F5F;
-   }
+}
 
-.dod{
+.dod {
     color: #fff;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
-    padding:0 1rem 0 1rem;
+    padding: 0 1rem 0 1rem;
     font-size: 110%
 }
 
-.navbar-collapse ul{
+.navbar-collapse ul {
     margin-left: 1em;
 }
 
 /* navbar customization ends here */
 
-.footer-cont{
+.footer-cont {
     padding: 0 0 1.5rem 1rem;
     margin: 0 0 0 0;
 }
 
-.footer-cont ul{
+.footer-cont ul {
     padding: 0px;
     margin: 0px;
 }
-.navtab .nav-link{
+
+.navtab .nav-link {
     color: #5f6368;
-    font-family: 'Manrope',sans-serif;
+    font-family: 'Manrope', sans-serif;
     transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-    
 }
 
-.navtab .nav-link:hover{
+.navtab .nav-link:hover {
     color: #202124;
-    
-    
 }
 
-.navtab .nav-link.active{
+.navtab .nav-link.active {
     color: #F95F5F;
-    
 }
 
-.activeLink{
+.activeLink {
     color: #F95F5F;
-    
-    
-}
-.navtop a{
-font-family: 'Manrope', sans-serif;
 }
 
-.navtop a .nav-link.active{
+.navtop a {
+    font-family: 'Manrope', sans-serif;
+}
+
+.navtop a .nav-link.active {
     font-family: 'Manrope', sans-serif;
     font-weight: bold;
-    }
+}
 
-.sidenav a{
+.sidenav a {
     color: #5f6368;
 }
 
-.sidenav .nav-link.active{
+.sidenav .nav-link.active {
     color: #5f6368;
     font-weight: bold;
 }
 
 .navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
+    color: rgba(0, 0, 0, .5);
     border-color: transparent;
 }
 
@@ -238,78 +262,67 @@ font-family: 'Manrope', sans-serif;
     fill: #114F3A;
 }
 
-
-
 /* footer css starts here*/
 
-footer{
+footer {
     margin: 0;
     padding: 0;
     background: #222;
     padding-top: 5%;
 }
 
-footer ul{
-   list-style: none;
+footer ul {
+    list-style: none;
 }
 
-.footer-links p{
-    
+.footer-links p {
     color: #e1e1e1;
 }
 
-.footer-links a{
-   
+.footer-links a {
     color: #e1e1e1;
 }
 
-.footer-foot p{
-   
+.footer-foot p {
     color: #888;
 }
 
-.footer-foot a{
+.footer-foot a {
     color: #888;
 }
-.footer-name{
+
+.footer-name {
     font-family: Inter UI;
-font-style: normal;
-font-weight: 800;
-
-
-
-color: #F95F5F;
-
+    font-style: normal;
+    font-weight: 800;
+    color: #F95F5F;
 }
 
-.sub-text{
+.sub-text {
     font-size: 80%;
     color: rgba(72, 78, 78, 0.637);
     letter-spacing: 0.1em;
-    
-
 }
 
-
-.footer-address{
+.footer-address {
     font-family: Inter UI;
-font-style: normal;
-font-weight: normal;
-line-height: normal;
-font-size: 12px;
-
-color: #DADADA;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 12px;
+    color: #DADADA;
 }
 
-.footer-link-head{
+.footer-link-head {
     font-family: Inter UI;
-font-style: normal;
-font-weight: 600;
-line-height: normal;
-font-size: 14px;
-color: #9D9999;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 14px;
+    color: #9D9999;
 }
-.footer-link-link{
+
+.footer-link-link {
     font-family: Inter UI;
     font-style: normal;
     font-weight: normal;
@@ -326,35 +339,33 @@ color: #9D9999;
     width: 100%;
 }
 
-.circle{
+.circle {
     border-radius: 50%;
 }
 
-.container-fluid,.row{
-margin: 0;
-padding: 0;
+.container-fluid, .row {
+    margin: 0;
+    padding: 0;
 }
 
-
-
-.profile-small img{
+.profile-small img {
     width: 3em;
     height: 3em;
     object-fit: cover;
     border-radius: 50%;
 }
 
-.media img{
+.media img {
     width: 7em;
     height: 7em;
     object-fit: cover;
 }
 
-.full-logo{
+.full-logo {
     margin-left: .5em;
 }
 
-.img-profile{
+.img-profile {
     width: 7em;
     object-fit: cover;
     height: 7em;
@@ -381,46 +392,44 @@ padding: 0;
     z-index: 9999;
   } */
 
-  .option{
+.option {
     animation-duration: 0.1s;
     animation-delay: 0s;
     -webkit-animation-duration: 0.1s;
     -webkit-animation-delay: 0s;
-
 }
 
-  .option-2{
+.option-2 {
     animation-duration: 0.1s;
     animation-delay: 0.3s;
     -webkit-animation-duration: 0.1s;
     -webkit-animation-delay: 0.3s;
-    
 }
 
-.bg-svg{
+.bg-svg {
     background-image: url(../img/trianglify.svg);
     background-position: center;
     background-size: cover;
 }
 
-.bg-text-highlight{
-background-color: #2432356e;
-border-radius: 5px;
-}
-
-.shadow-subtle{
-    box-shadow: 0 3px 7px 1px #40494a1f;
-}
-
-.rounded-5px{
+.bg-text-highlight {
+    background-color: #2432356e;
     border-radius: 5px;
 }
 
-@keyframes placeHolderShimmer{
-    0%{
+.shadow-subtle {
+    box-shadow: 0 3px 7px 1px #40494a1f;
+}
+
+.rounded-5px {
+    border-radius: 5px;
+}
+
+@keyframes placeHolderShimmer {
+    0% {
         background-position: -468px 0
     }
-    100%{
+    100% {
         background-position: 468px 0
     }
 }
@@ -441,32 +450,108 @@ border-radius: 5px;
 #top, #bottom, #left, #right {
     background: linear-gradient(273deg, #f68121, #00a761, #005599, #991a97, #800015);
     background-size: 1000% 1000%;
-    
     -webkit-animation: AnimationName 10s ease infinite;
     -moz-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;
-	position: fixed;
-	}
-	#left, #right {
-		top: 0; bottom: 0;
-		width: 2px;
-		}
-		#left { left: 0; }
-		#right { right: 0; }
-		
-	#top, #bottom {
-		left: 0; right: 0;
-		height: 2px;
-		}
-		#top { top: 0; }
-        #bottom { bottom: 0; }
-        
-        .colorline-no{
-            background: linear-gradient(273deg, #f7d3b6, #b4ecd5, #d2e4f3, #f3c1f2, #f3b2bd);
-            background-size: 1000% 1000%;
-            opacity: 10%;
-            
-            -webkit-animation: AnimationName 10s ease infinite;
-            -moz-animation: AnimationName 10s ease infinite;
-            animation: AnimationName 10s ease infinite;
-        }
+    position: fixed;
+}
+
+#left, #right {
+    top: 0;
+    bottom: 0;
+    width: 2px;
+}
+
+#left {
+    left: 0;
+}
+
+#right {
+    right: 0;
+}
+
+#top, #bottom {
+    left: 0;
+    right: 0;
+    height: 2px;
+}
+
+#top {
+    top: 0;
+}
+
+#bottom {
+    bottom: 0;
+}
+
+.colorline-no {
+    background: linear-gradient(273deg, #f7d3b6, #b4ecd5, #d2e4f3, #f3c1f2, #f3b2bd);
+    background-size: 1000% 1000%;
+    opacity: 10%;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+}
+
+.header-design-meet{
+
+    
+
+}
+
+.header-design-meet {
+    background: gray url(../img/geometry2.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 300px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slyd 20s linear infinite;
+  }
+
+@-webkit-keyframes slyd {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0; }
+}
+
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2019-2-15 19:43:58
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation tracking-in-expand
+ * ----------------------------------------
+ */
+ @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
