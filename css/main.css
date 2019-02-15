@@ -533,7 +533,7 @@ footer ul {
  */
  @-webkit-keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
+      letter-spacing: -0.1em;
       opacity: 0;
     }
     40% {
@@ -545,7 +545,7 @@ footer ul {
   }
   @keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.5em;
+      letter-spacing: -0.1em;
       opacity: 0;
     }
     40% {
