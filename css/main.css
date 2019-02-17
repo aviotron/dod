@@ -189,6 +189,15 @@ a {
         font-weight: 300;
         line-height: 1.2;
     }
+    .dod {
+        color: #fff;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+        padding: 0 1rem 0 1rem;
+        font-size: 110%;
+        line-height: 2em;
+        
+    }
 }
 
 .navbar-brand {
