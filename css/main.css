@@ -15,13 +15,13 @@
 }
 
 h1, h2, h3 {
-    font-family: 'Inter UI', sans-serif;
-    font-weight: 700;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 900;
     color: #373b48;
 }
 
 h4, h5, h6 {
-    font-family: 'Inter UI', sans-serif;
+    font-family: 'Manrope', sans-serif;
     font-weight: 700;
     color: #373b48;
 }
@@ -180,10 +180,7 @@ a {
 }
 
 @media (max-width:35em) {
-    .navbar {
-        line-height: 3em;
-        padding: 0px;
-    }
+  
     .display-4 {
         font-size: 2.5rem;
         font-weight: 300;
@@ -215,7 +212,7 @@ a {
     font-weight: 900;
     padding: 0 1rem 0 1rem;
     font-size: 110%;
-    line-height: 3em;
+    line-height: 2.5em;
     
 }
 
