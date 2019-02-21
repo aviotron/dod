@@ -1,0 +1,20 @@
+{
+    "name": "Department Of Design - IIT Guwahati, India",
+    "short_name": "DoD, IITG",
+    "start_url": "index.html",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#eb5757",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}
