@@ -193,17 +193,17 @@ primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.d
 .carousel-box img{
     height: 415px;
     widows: 100%;
-    object-fit: cover;
+    object-fit: cover; 
 }
 
-.carousel-caption{
-    background: #292525E6;
-    
+
+
+.carousel-caption h1{
+    /* background: #292525E6; */
+    color: #fff; 
 }
 .carousel-caption h4{
     color: white;
-    
-
 }
 
 
