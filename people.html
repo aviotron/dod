@@ -121,7 +121,56 @@
     <!-- section- batch group list starts here  -->
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
-            hola
+           <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
+                    <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
+                    <a href="people_batch.html" style="cursor:pointer;">
+                        <div class="photo-card">
+                            <div id="batch_pic" class="photo-background"></div>
+                            <div class="photo-details">
+                                <h2 id="batch_name">Batch 2016</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
+                        <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
+                        <a href="#" style="cursor:pointer;">
+                            <div class="photo-card">
+                                <div id="batch_pic" class="photo-background"></div>
+                                <div class="photo-details">
+                                    <h2 id="batch_name">Batch 2016</h2>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
+                            <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
+                            <a href="#" style="cursor:pointer;">
+                                <div class="photo-card">
+                                    <div id="batch_pic" class="photo-background"></div>
+                                    <div class="photo-details">
+                                        <h2 id="batch_name">Batch 2016</h2>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
+                                <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
+                                <a href="#" style="cursor:pointer;">
+                                    <div class="photo-card">
+                                        <div id="batch_pic" class="photo-background"></div>
+                                        <div class="photo-details">
+                                            <h2 id="batch_name">Batch 2016</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+            
+            
+                        </div>
+                    </div>
         </div>
 
         <div class="tab-pane fade show " id="tab2" role="tabpanel" aria-labelledby="faculty-tab">
@@ -165,15 +214,13 @@
                             <div class="col-lg-10">
                                 <div class="team-boxed">
                                     <div class="container-fluid">
-                                        <div class="intro d-none">
-                                            <h2 class="text-center">Team </h2>
-                                            <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed
-                                                justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
-                                        </div>
+
+                                        <img class="row no-gutters img-fluid img-round"
+                                            src="https://www.iitg.ac.in/design/images/HomePage_Slide2.jpg" alt="">
                                         <div class="card-columns people " id='faculty_list'>
-                                                <img src="img/svg-loaders/spinning-circles.svg" />
+                                            <img src="img/svg-loaders/spinning-circles.svg" />
                                         </div>
-                                       
+
 
                                         <!-- /.card-columns -->
                                     </div>
@@ -181,7 +228,7 @@
 
                                 </div>
                             </div>
-                            
+
                         </div>
 
 
