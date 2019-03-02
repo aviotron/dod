@@ -45,15 +45,15 @@ $(function () {
         // }
         // out += '</ul>';
 
-        var out1='';    
+        var out1 = '';
         for (var i = 0; i < people.length; i++) {
-            out1 +='<div class="card item " style="    background-color: transparent; border:0px;">'
-            +'<div class="box">'
-            +'<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="'+people[i].imgurl+'">'
-            +' <h4 class="name">'+people[i].name+'</h4>'
-            +'<p class="title">'+people[i].id+'</p>'
-            +'<p class="description ellipsise ">'+people[i].interest_areas+'</p>'
-            +'<div class="social"><a href="'+people[i].portfolio+'"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div></div></div>'
+            out1 += '<div class="card item " style="    background-color: transparent; border:0px;">'
+                + '<div class="box">'
+                + '<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="' + people[i].imgurl + '">'
+                + ' <h4 class="name">' + people[i].name + '</h4>'
+                + '<p class="title">' + people[i].id + '</p>'
+                + '<p class="description ellipsise ">' + people[i].interest_areas + '</p>'
+                + '<div class="social"><a href="' + people[i].portfolio + '"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div></div></div>'
 
 
 
@@ -63,9 +63,9 @@ $(function () {
 
 
         document.getElementById('batch_member_list').innerHTML = out1;
-       
+
 
         console.log(people);
-       
+
     })
 });
