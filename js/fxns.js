@@ -27,25 +27,47 @@ $(function () {
 
 
         }
-        var out = '<ul class="list-group list-group-flush">';
 
+        // var out = '<ul class="list-group list-group-flush option animated fadeInUp">';
+        // for (var i = 0; i < people.length; i++) {
+        //     out +=
+        //         '<li class="list-group-item"><img class="img-profile" src="' + people[i].imgurl + '" alt="">'
+        //         + '<h5 class="mt-2">' + people[i].name + '</h5>'
+        //         + ' <div class="">' + people[i].designation + '</div>'
+        //         + '<div class="small mt-1  text-info">Interest Areas</div>'
+        //         + '<div class="small">' + people[i].interest_areas + '</div>'
+        //         + '<div class="small mt-1  text-info">Contact</div>'
+        //         + '<div class="small"><span>' + people[i].username + '@iitg.ac.in</span>&nbsp<span>' + people[i].phone_01 + '</span></div>'
+        //         + '<a href="' + people[i].portfolio + '"><div class="small mt-1  text-info"><b>Personal Webpage</b> </div></a></li>'
+
+        //         ;
+
+        // }
+        // out += '</ul>';
+
+        var out1='';    
         for (var i = 0; i < people.length; i++) {
-            out +=
-                '<li class="list-group-item"><img class="img-profile" src="' + people[i].imgurl + '" alt="">'
-                + '<h5 class="mt-2">' + people[i].name + '</h5>'
-                + ' <div class="">' + people[i].designation + '</div>'
-                + '<div class="small mt-1  text-info">Interest Areas</div>'
-                + '<div class="small">' + people[i].interest_areas + '</div>'
-                + '<div class="small mt-1  text-info">Contact</div>'
-                + '<div class="small"><span>' + people[i].username + '@iitg.ac.in</span>&nbsp<span>' + people[i].phone_01 + '</span></div>'
-                + '<a href="' + people[i].portfolio + '"><div class="small mt-1  text-info"><b>Personal Webpage</b> </div></a></li>'
+            out1 +='<div class="card item " style="    background-color: transparent; border:0px;">'
+            +'<div class="box">'
+            +'<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="'+people[i].imgurl+'">'
+            +' <h4 class="name">'+people[i].name+'</h4>'
+            +'<p class="title">'+people[i].designation+'</p>'
+            +'<p class="description ellipsise ">'+people[i].interest_areas+'</p>'
+            +'<div class="social"><a href="'+people[i].portfolio+'"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div></div></div>'
 
-                ;
+
 
         }
-        out += '</ul>';
-        document.getElementById('faculty_list').innerHTML = out;
+
+
+
+
+        document.getElementById('faculty_list').innerHTML = out1;
+       
 
         console.log(people);
+        var module = document.getElementsByClassName("description");
+
+        $clamp(module, {clamp: 2});
     })
 });

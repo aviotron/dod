@@ -16,6 +16,7 @@
 
     <!-- css for this specific page -->
     <link rel="stylesheet" href="css/people.css" />
+    <link rel="stylesheet" href="css/team-boxed.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
@@ -26,104 +27,109 @@
 <body>
 
     <!-- nav starts -->
-    <div class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light navtop">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/iitg_logo.png.png" width="30" height="30" alt="">
+    <header>
+        <div class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navtop">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/iitg_logo.png.png" width="30" height="30" alt="">
 
-                </a>
-                <a class="navbar-brand full-logo" href="index.html">
-                    <span class="dod">DOD</span>
-                </a>
+                    </a>
+                    <a class="navbar-brand full-logo" href="index.html">
+                        <span class="dod">DOD</span>
+                    </a>
 
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse  justify-content-center" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-center">
-                        <li class="nav-item dod-logo">
-                            <a class="nav-link " href="index.html">Home</a>
-                        </li>
+                    <div class="collapse navbar-collapse  justify-content-center" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 justify-content-center">
+                            <li class="nav-item dod-logo">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
 
-                        <li class="nav-item dod-logo">
-                            <a class="nav-link " href="work.html">Work</a>
-                        </li>
+                            <li class="nav-item dod-logo">
+                                <a class="nav-link " href="work.html">Work</a>
+                            </li>
 
-                        <li class="nav-item dod-logo">
-                            <a class="nav-link active" href="people.html">People</a>
-                        </li>
+                            <li class="nav-item dod-logo">
+                                <a class="nav-link active" href="people.html">People</a>
+                            </li>
 
-                        <li class="nav-item dod-logo">
-                            <a class="nav-link " href="news.html">News & Events</a>
-                        </li>
+                            <li class="nav-item dod-logo">
+                                <a class="nav-link " href="news.html">News & Events</a>
+                            </li>
 
-                        <li class="nav-item dod-logo">
-                            <a class="nav-link " href="academics.html">Academics</a>
-                        </li>
-                        <li class="nav-item dod-logo">
-                            <a class="nav-link " href="admissions.html">Admissions</a>
-                        </li>
-                        <li class="nav-item dod-logo">
-                            <a class="nav-link " href="about.html">About</a>
-                        </li>
-                    </ul>
+                            <li class="nav-item dod-logo">
+                                <a class="nav-link " href="academics.html">Academics</a>
+                            </li>
+                            <li class="nav-item dod-logo">
+                                <a class="nav-link " href="admissions.html">Admissions</a>
+                            </li>
+                            <li class="nav-item dod-logo">
+                                <a class="nav-link " href="about.html">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- nav ends -->
+            <div class="colorline"></div>
+        </div>
+        <!-- nav ends -->
+
+        <!-- header sections starts here -->
+
+        <div class="container-fluid header-people pt-4 ">
+            <div class="row justify-content-center align-content-center">
+                <div class="col text-center">
+                    <h1>People</h1>
                 </div>
             </div>
-        </nav>
-        <!-- nav ends -->
-        <div class="colorline"></div>
-    </div>
-    <!-- nav ends -->
 
-    <!-- header sections starts here -->
+            <ul class="nav justify-content-center navtab" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="tab-students" data-toggle="tab" href="#tab1" role="tab"
+                        aria-controls="tab1">Students</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="faculty-tab" data-toggle="tab" href="#tab2" role="tab"
+                        aria-controls="tab2">Faculty</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " id="staff-tab" data-toggle="tab" href="#tab3" role="tab"
+                        aria-controls="tab3">Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#">Alumni</a>
+                </li>
 
-    <div class="container-fluid header-people bg-grey pt-4 ">
-        <div class="row justify-content-center align-content-center">
-            <div class="col text-center">
-                <h1>People</h1>
-            </div>
+            </ul>
         </div>
-
-        <ul class="nav justify-content-center navtab" id="myTab" role="tablist">
-            <li class="nav-item">
-                <a class="nav-link " id="students-tab" data-toggle="tab" href="#students" role="tab"
-                    aria-controls="students">Students</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" id="faculty-tab" data-toggle="tab" href="#faculty" role="tab"
-                    aria-controls="faculty">Faculty</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " id="staff-tab" data-toggle="tab" href="#staff" role="tab"
-                    aria-controls="staff">Staff</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link " href="#">Alumni</a>
-            </li>
-
-        </ul>
-    </div>
-
+    </header>
     <!-- header section ends here -->
 
+    <section>
+
+
+    </section>
 
     <!-- section- batch group list starts here  -->
-    <div class="tab-content " id="students-tab">
-        <div class="tab-pane fade show active" id="students-tab" role="tabpanel" aria-labelledby="students-tab">
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+            hola
         </div>
-    </div>
 
-    <div class="tab-content " id="faculty-tab">
-        <div class="tab-pane fade show active" id="faculty-tab" role="tabpanel" aria-labelledby="faculty-tab">
-            <div class="container mt-3 mb-4 ">
-                <div class="row">
+        <div class="tab-pane fade show " id="tab2" role="tabpanel" aria-labelledby="faculty-tab">
+            <div class="container-fluid mt-3 mb-4 ">
+                <div class="row justify-content-end">
 
                     <div class="col-lg-2 col-sm-12 pt-4 d-none d-lg-block sidenav">
-                        <ul class="nav flex-column ">
+                        <ul class="nav flex-column justify-content-end text-right">
                             <li class="nav-item">
                                 <a class="nav-link active" href="#">Current</a>
                             </li>
@@ -138,7 +144,7 @@
 
                         </ul>
                     </div>
-                    <div class="col-sm-12 d-lg-none text-center">
+                    <div class="col-sm-12 col-lg-2 d-lg-none text-right justify-content-end">
                         <div class="dropdown">
                             <a class="btn btn-light dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -154,85 +160,68 @@
 
 
                     </div>
-                    <div class="col-12 col-lg-10 p-0 m-0" id='faculty_list'>
-                          <div class="row justify-content-center align-items-center" style="min-height: 30rem; ">
-                            <div class="col justify-content-center align-items-center text-center">
-                                    <img src="img/svg-loaders/spinning-circles.svg" />
+                    <div class="col-12 col-lg-10 p-0 m-0">
+                        <div class="row  align-items-center" style="min-height: 30rem; ">
+                            <div class="col-lg-10">
+                                <div class="team-boxed">
+                                    <div class="container-fluid">
+                                        <div class="intro d-none">
+                                            <h2 class="text-center">Team </h2>
+                                            <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed
+                                                justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae.</p>
+                                        </div>
+                                        <div class="card-columns people " id='faculty_list'>
+                                                <img src="img/svg-loaders/spinning-circles.svg" />
+                                        </div>
+                                       
+
+                                        <!-- /.card-columns -->
+                                    </div>
+                                    <!-- /.container -->
+
+                                </div>
                             </div>
-                               
+                            
+                        </div>
 
 
-                          </div>  
-                        <!-- <ul class="list-group list-group-flush" id="faculty_list">
 
-
-                            <li class="list-group-item">
-
-                                <img class="img-profile"
-                                    src="https://www.iitg.ac.in/design/upload/images/faculties/UK.png" alt="">
-
-
-                                <h5 class="mt-2">D.Uday Kumar</h5>
-                                <div class="">Associate Professor and Head of the Department</div>
-                                <div class="small mt-1  text-info">Interest Areas</div>
-                                <div class="small">Visual Communication, Graphic Design, Typography,
-                                    Information Graphics, Architecture, Design Education and Research</div>
-                                <div class="small mt-1  text-info">Contact</div>
-                                <div class="small"><span>d.udaya@iitg.ac.in</span>&nbsp<span>+91-9910066488</span></div>
-                                <a href="#">
-                                    <div class="small mt-1  text-info"><b>Personal Webpage</b> </div>
-                                </a>
-
-
-                            </li>
-
-                            <li class="list-group-item">
-
-                                <img class="img-profile"
-                                    src="https://www.iitg.ac.in/design/upload/images/faculties/DC.jpg" alt="">
-
-
-                                <h5 class="mt-2">Debkumar Chakrabarti</h5>
-                                <div class="">Associate Professor and Head of the Department</div>
-                                <div class="small mt-1  text-info">Interest Areas</div>
-                                <div class="small">Visual Communication, Graphic Design, Typography,
-                                    Information Graphics, Architecture, Design Education and Research</div>
-                                <div class="small mt-1  text-info">Contact</div>
-                                <div class="small"><span>d.udaya@iitg.ac.in</span>&nbsp<span>+91-9910066488</span></div>
-                                <a href="#">
-                                    <div class="small mt-1  text-info"><b>Personal Webpage</b> </div>
-                                </a>
-
-
-                            </li>
-
-                            <li class="list-group-item">
-
-                                <img class="img-profile"
-                                    src="http://www.iitg.ac.in/design/portfolio/akd/image/akdas.jpg" alt="">
-
-
-                                <h5 class="mt-2">A.K.Das</h5>
-                                <div class="">Associate Professor and Head of the Department</div>
-                                <div class="small mt-1  text-info">Interest Areas</div>
-                                <div class="small">Visual Communication, Graphic Design, Typography,
-                                    Information Graphics, Architecture, Design Education and Research</div>
-                                <div class="small mt-1  text-info">Contact</div>
-                                <div class="small"><span>d.udaya@iitg.ac.in</span>&nbsp<span>+91-9910066488</span></div>
-                                <a href="#">
-                                    <div class="small mt-1  text-info"><b>Personal Webpage</b> </div>
-                                </a>
-
-
-                            </li>
-
-                        </ul> -->
                     </div>
+                    <!-- <ul class="list-group list-group-flush" id="faculty_list">
+    
+    
+                                <li class="list-group-item">
+    
+                                    <img class="img-profile"
+                                        src="https://www.iitg.ac.in/design/upload/images/faculties/UK.png" alt="">
+    
+    
+                                    <h5 class="mt-2">D.Uday Kumar</h5>
+                                    <div class="">Associate Professor and Head of the Department</div>
+                                    <div class="small mt-1  text-info">Interest Areas</div>
+                                    <div class="small">Visual Communication, Graphic Design, Typography,
+                                        Information Graphics, Architecture, Design Education and Research</div>
+                                    <div class="small mt-1  text-info">Contact</div>
+                                    <div class="small"><span>d.udaya@iitg.ac.in</span>&nbsp<span>+91-9910066488</span></div>
+                                    <a href="#">
+                                        <div class="small mt-1  text-info"><b>Personal Webpage</b> </div>
+                                    </a>
+    
+    
+                                </li>
+    
+                               
+    
+                               
+    
+                            </ul> -->
                 </div>
-
             </div>
+
         </div>
     </div>
+    </div>
+
 
 
 
@@ -343,8 +332,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
         integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
         crossorigin="anonymous"></script>
-
+    <script src="js/clamp.min.js"></script>
     <script src="js/fxns.js"></script>
+
+
 
 </body>
 
