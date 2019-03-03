@@ -1,3 +1,52 @@
+var getParams = function (url) {
+    var params = {};
+    var parser = document.createElement('a');
+    parser.href = url;
+    var query = parser.search.substring(1);
+    var vars = query.split('&');
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split('=');
+        params[pair[0]] = decodeURIComponent(pair[1]);
+    }
+    return params;
+};
+
+var g_id = getParams(window.location.href).id;
+var g_name='GRoup NAme';
+var g_imgurl='#';
+
+$(function () {
+    
+    var sheetUrlGroups = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/5/public/full?alt=json';
+    $.getJSON(sheetUrlGroups, function (data) {
+        var entry = data.feed.entry;
+        var current_student_batches = [];
+        for (var i = 4; i < entry.length; i = i + 4)
+        { var g=new Object();
+            g.id=entry[i].content.$t;
+            if(g.id===g_id)
+            {g_name=entry[i+2].content.$t;
+                g_imgurl=entry[i+1].content.$t;
+
+               
+            }
+           
+        }
+
+        document.getElementById("group_image").src=g_imgurl;
+        document.getElementById("group_name").innerHTML=g_name;
+
+        
+       
+
+
+    
+    
+    });})
+
+
+
+
 
 $(function () {
     // document.getElementById('faculty_list').innerHTML='';
@@ -11,6 +60,7 @@ $(function () {
         for (var i = 12; i < entry.length; i = i + 12) {
             // entry[i].content.$t retrieves the content of each cell
             var p = new Object();
+
             p.type = entry[i].content.$t;
             p.name = entry[i + 1].content.$t;
             p.id = entry[i + 2].content.$t;
@@ -23,7 +73,12 @@ $(function () {
             p.phone_02 = entry[i + 9].content.$t;
             p.imgurl = entry[i + 10].content.$t;
             p.groupid = entry[i + 11].content.$t;
-            people.push(p);
+
+            if (p.groupid === g_id) {
+                people.push(p);
+
+            }
+
 
 
         }
