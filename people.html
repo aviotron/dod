@@ -121,56 +121,14 @@
     <!-- section- batch group list starts here  -->
     <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
-           <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
-                    <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
-                    <a href="people_batch.html" style="cursor:pointer;">
-                        <div class="photo-card">
-                            <div id="batch_pic" class="photo-background"></div>
-                            <div class="photo-details">
-                                <h2 id="batch_name">Batch 2016</h2>
-                            </div>
-                        </div>
-                    </a>
+            <div class="container">
+                <div class="row" id="student_batch_list">
+                    <div class="loader text-center col pt-5" style="min-height:35vw">
+                            <img src="img/svg-loaders/spinning-circles.svg" />
+                    </div>
+
                 </div>
-                <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
-                        <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
-                        <a href="#" style="cursor:pointer;">
-                            <div class="photo-card">
-                                <div id="batch_pic" class="photo-background"></div>
-                                <div class="photo-details">
-                                    <h2 id="batch_name">Batch 2016</h2>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
-                            <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
-                            <a href="#" style="cursor:pointer;">
-                                <div class="photo-card">
-                                    <div id="batch_pic" class="photo-background"></div>
-                                    <div class="photo-details">
-                                        <h2 id="batch_name">Batch 2016</h2>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-sm-12" *ngFor="let batchs of batches">
-                                <!-- <a (click)="onBatchSelect(batch.imgurl,batch.name)" style="cursor:pointer;"> -->
-                                <a href="#" style="cursor:pointer;">
-                                    <div class="photo-card">
-                                        <div id="batch_pic" class="photo-background"></div>
-                                        <div class="photo-details">
-                                            <h2 id="batch_name">Batch 2016</h2>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-            
-            
-                        </div>
-                    </div>
+            </div>
         </div>
 
         <div class="tab-pane fade show " id="tab2" role="tabpanel" aria-labelledby="faculty-tab">
@@ -217,8 +175,11 @@
 
                                         <img class="row no-gutters img-fluid img-round"
                                             src="https://www.iitg.ac.in/design/images/HomePage_Slide2.jpg" alt="">
+                                          
                                         <div class="card-columns people " id='faculty_list'>
-                                            <img src="img/svg-loaders/spinning-circles.svg" />
+                                                <div class="loader text-center col pt-5" style="min-height:35vw">
+                                                        <img src="img/svg-loaders/spinning-circles.svg" />
+                                                </div>
                                         </div>
 
 
@@ -381,6 +342,15 @@
         crossorigin="anonymous"></script>
     <script src="js/clamp.min.js"></script>
     <script src="js/fxns.js"></script>
+    <script>    
+        $('.nav-tabs a').on('shown.bs.tab', function(event){
+  var x = $(event.target).text();         // active tab
+  var y = $(event.relatedTarget).text(); 
+  
+  console.log(x);
+  console.log(y)// previous tab
+});
+    </script>
 
 
 

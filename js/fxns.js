@@ -2,13 +2,14 @@
 $(function () {
     // document.getElementById('faculty_list').innerHTML='';
     var sheetUrl = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/1/public/full?alt=json';
+    var sheetUrlGroups = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/5/public/full?alt=json';
     $.getJSON(sheetUrl, function (data) {
         var entry = data.feed.entry;
 
 
 
         var people = [];
-        for (var i = 11; i < entry.length; i = i + 11) {
+        for (var i = 12; i < entry.length; i = i + 12) {
             // entry[i].content.$t retrieves the content of each cell
             var p = new Object();
             p.type = entry[i].content.$t;
@@ -22,6 +23,7 @@ $(function () {
             p.phone_01 = entry[i + 8].content.$t;
             p.phone_02 = entry[i + 9].content.$t;
             p.imgurl = entry[i + 10].content.$t;
+            p.groupid = entry[i + 11].content.$t;
 
             people.push(p);
 
@@ -47,7 +49,7 @@ $(function () {
 
         var out1='';    
         for (var i = 0; i < people.length; i++) {
-            out1 +='<div class="card item " style="    background-color: transparent; border:0px;">'
+            out1 +='<div class="card item " style="    background-color: transparent; border:0px;" data-filter-item data-filter-name="'+people[i].name+'">'
             +'<div class="box">'
             +'<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="'+people[i].imgurl+'">'
             +' <h4 class="name">'+people[i].name+'</h4>'
@@ -58,16 +60,64 @@ $(function () {
 
 
         }
-
-
-
-
         document.getElementById('faculty_list').innerHTML = out1;
        
 
-        console.log(people);
-        var module = document.getElementsByClassName("description");
-
-        $clamp(module, {clamp: 2});
     })
+
+    $.getJSON(sheetUrlGroups, function (data){
+        var entry = data.feed.entry;
+        var current_student_batches = [];
+        for (var i = 4; i < entry.length; i = i + 4)
+        { var g=new Object();
+            g.id=entry[i].content.$t;
+            g.imgurl=entry[i+1].content.$t;
+            g.name=entry[i+2].content.$t;
+            current_student_batches.push(g);
+        }
+
+        var student_batch='';
+
+        for (var i = 0; i < current_student_batches.length; i++) {
+                student_batch+=
+                '<div class="col-lg-6 col-sm-12 animated fadeInUp" >'
+               +
+                '<a href="people_batch.html?id='+current_student_batches[i].id+'" style="cursor:pointer;">'
+                +
+                    '<div class="photo-card">'
+                    +
+                        '<div id="batch_pic" class="photo-background" style="background-image: url('+current_student_batches[i].imgurl+');"></div>'
+                        +
+                        '<div class="photo-details">'
+                        +
+                            '<h2 id="batch_name">'+current_student_batches[i].name+'</h2>'
+                            +
+                       ' </div>'
+                       +
+                   ' </div>'
+                   +
+                '</a>'
+                +
+           ' </div>'
+        }
+        document.getElementById('student_batch_list').innerHTML = student_batch;
+
+
+
+
+    })
+
+   
 });
+
+
+/*
+
+	How to use:
+	1)	Copy this jQuery to your project
+	2)	Add [data-search] to search input
+	3)	Add [data-filter-item] to the items that should be filtered
+	4)	Add [data-filter-name="SEARCH TERM"] to the filter-items
+
+*/
+

@@ -8,7 +8,7 @@ $(function () {
 
 
         var people = [];
-        for (var i = 11; i < entry.length; i = i + 11) {
+        for (var i = 12; i < entry.length; i = i + 12) {
             // entry[i].content.$t retrieves the content of each cell
             var p = new Object();
             p.type = entry[i].content.$t;
@@ -22,7 +22,7 @@ $(function () {
             p.phone_01 = entry[i + 8].content.$t;
             p.phone_02 = entry[i + 9].content.$t;
             p.imgurl = entry[i + 10].content.$t;
-
+            p.groupid = entry[i + 11].content.$t;
             people.push(p);
 
 
@@ -65,7 +65,6 @@ $(function () {
         document.getElementById('batch_member_list').innerHTML = out1;
 
 
-        console.log(people);
 
     })
 });
