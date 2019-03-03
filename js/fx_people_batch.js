@@ -12,37 +12,39 @@ var getParams = function (url) {
 };
 
 var g_id = getParams(window.location.href).id;
-var g_name='GRoup NAme';
-var g_imgurl='#';
+var g_name = 'GRoup NAme';
+var g_imgurl = '#';
 
 $(function () {
-    
+
     var sheetUrlGroups = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/5/public/full?alt=json';
     $.getJSON(sheetUrlGroups, function (data) {
         var entry = data.feed.entry;
         var current_student_batches = [];
-        for (var i = 4; i < entry.length; i = i + 4)
-        { var g=new Object();
-            g.id=entry[i].content.$t;
-            if(g.id===g_id)
-            {g_name=entry[i+2].content.$t;
-                g_imgurl=entry[i+1].content.$t;
+        for (var i = 4; i < entry.length; i = i + 4) {
+            var g = new Object();
+            g.id = entry[i].content.$t;
+            if (g.id === g_id) {
+                g_name = entry[i + 2].content.$t;
+                g_imgurl = entry[i + 1].content.$t;
 
-               
+
             }
-           
+
         }
 
-        document.getElementById("group_image").src=g_imgurl;
-        document.getElementById("group_name").innerHTML=g_name;
-
-        
-       
+        document.getElementById("group_image").src = g_imgurl;
+        document.getElementById("group_name").innerHTML = g_name;
+        document.getElementById("namenimage").class = 'option animated fadeInUp'
 
 
-    
-    
-    });})
+
+
+
+
+
+    });
+})
 
 
 
@@ -100,9 +102,13 @@ $(function () {
         // }
         // out += '</ul>';
 
-        var out1 = '';
+        var out1 =
+            '<div class="row justify-content-center option animated fadeInUp"><div class="col-lg-10"><div class="card-columns people">';
+
+
+
         for (var i = 0; i < people.length; i++) {
-            out1 += '<div class="card item " style="    background-color: transparent; border:0px;">'
+            out1 += '<div class="card item " style="background-color: transparent; border:0px;">'
                 + '<div class="box">'
                 + '<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="' + people[i].imgurl + '">'
                 + ' <h4 class="name">' + people[i].name + '</h4>'
@@ -113,6 +119,8 @@ $(function () {
 
 
         }
+
+        out1+= '</div></div></div>';
 
 
 
