@@ -103,14 +103,14 @@ $(function () {
         // out += '</ul>';
 
         var out1 =
-            '<div class="row justify-content-center option animated fadeInUp"><div class="col-lg-10"><div class="card-columns people">';
+            '<div class="row  option animated fadeInUp"><div class="col-lg-10 mx-auto"><div class="card-columns people">';
 
 
 
         for (var i = 0; i < people.length; i++) {
             out1 += '<div class="card item " style="background-color: transparent; border:0px;">'
                 + '<div class="box">'
-                + '<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="' + people[i].imgurl + '">'
+                + '<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle lazy" src="img/face-profile.svg" data-src="' + people[i].imgurl + ' ">'
                 + ' <h4 class="name">' + people[i].name + '</h4>'
                 + '<p class="title">' + people[i].id + '</p>'
                 + '<p class="description ellipsise ">' + people[i].interest_areas + '</p>'
@@ -126,8 +126,14 @@ $(function () {
 
 
         document.getElementById('batch_member_list').innerHTML = out1;
+        var lazyLoadInstance = new LazyLoad({
+            elements_selector: ".lazy"
 
+        });
 
+        if (lazyLoadInstance) {
+            lazyLoadInstance.update();
+        }
 
     })
 });
