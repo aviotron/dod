@@ -120,7 +120,7 @@ $(function () {
 
         }
 
-        out1+= '</div></div></a></div>';
+        out1 += '</div></div></a></div>';
 
 
 
