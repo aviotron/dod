@@ -826,3 +826,7 @@ h6{
         letter-spacing: -0.15rem;
     }
 }
+
+.breadcrumb a{
+    font-size: 90%;
+}
