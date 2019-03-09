@@ -809,3 +809,20 @@ h6{
     font-family: 'Inter UI', sans-serif;
     letter-spacing: -0.15rem;
 }
+
+@media (max-width:35em) {
+    h1{
+        font-size: 3rem;
+        font-weight: 800;
+        font-family: 'Inter UI', sans-serif;
+        letter-spacing: -0.15px;
+        line-height: 3rem;
+    }
+    
+    h6{
+        font-size: 1rem;
+        font-weight: bold;
+        font-family: 'Inter UI', sans-serif;
+        letter-spacing: -0.15rem;
+    }
+}
