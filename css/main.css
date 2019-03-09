@@ -799,7 +799,7 @@ body {
 h1{
     font-size: 3.75rem;
     font-weight: 800;
-    font-family: 'Inter UI', sans-serif;
+    font-family: 'Inter UI', 'Google Sans', sans-serif;
     letter-spacing: -0.15px;
 }
 
@@ -814,7 +814,7 @@ h6{
     h1{
         font-size: 3rem;
         font-weight: 800;
-        font-family: 'Inter UI', sans-serif;
+        font-family: 'Inter U', 'Google Sans', sans-serif;
         letter-spacing: -0.15px;
         line-height: 3rem;
     }
