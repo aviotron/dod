@@ -53,13 +53,15 @@ a {
 }
 
 /* navbar customization starts here */
-.navbar{
+
+.navbar {
     padding: 0;
     margin: 0;
 }
-.full-logo{
-    margin:0;
-    padding:0;
+
+.full-logo {
+    margin: 0;
+    padding: 0;
 }
 
 .colorline2 {
@@ -162,10 +164,12 @@ a {
 
 .nav-link {
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     line-height: normal;
     color: #DADADA;
 }
+
+
 
 .bg-light {
     background-color: #fff !important;
@@ -176,11 +180,10 @@ a {
 }
 
 .navbar-light {
-    background-color:#fff !important;
+    background-color: #fff !important;
 }
 
 @media (max-width:35em) {
-  
     .display-4 {
         font-size: 2.5rem;
         font-weight: 300;
@@ -193,7 +196,6 @@ a {
         padding: 0 1rem 0 1rem;
         font-size: 110%;
         line-height: 1.5em;
-        
     }
 }
 
@@ -213,7 +215,6 @@ a {
     padding: 0 1rem 0 1rem;
     font-size: 110%;
     line-height: 2.5em;
-    
 }
 
 .navbar-collapse ul {
@@ -509,11 +510,7 @@ footer ul {
     animation: AnimationName 10s ease infinite;
 }
 
-.header-design-meet{
-
-    
-
-}
+.header-design-meet {}
 
 .header-design-meet {
     background: gray url(../img/geometry2.png) repeat 0 0;
@@ -524,17 +521,21 @@ footer ul {
     padding-top: 120px;
     box-sizing: border-box;
     -webkit-animation: slyd 20s linear infinite;
-  }
+}
 
 @-webkit-keyframes slyd {
-    from { background-position: 0 0; }
-    to { background-position: -400px 0; }
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -400px 0;
+    }
 }
 
 .tracking-in-expand {
     font-size: 3.5rem;
-	-webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
 
 /* ----------------------------------------------
@@ -547,195 +548,264 @@ footer ul {
  * animation tracking-in-expand
  * ----------------------------------------
  */
- @-webkit-keyframes tracking-in-expand {
+
+@-webkit-keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.1em;
-      opacity: 0;
+        letter-spacing: -0.1em;
+        opacity: 0;
     }
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  @keyframes tracking-in-expand {
+}
+
+@keyframes tracking-in-expand {
     0% {
-      letter-spacing: -0.1em;
-      opacity: 0;
+        letter-spacing: -0.1em;
+        opacity: 0;
     }
     40% {
-      opacity: 0.6;
+        opacity: 0.6;
     }
     100% {
-      opacity: 1;
+        opacity: 1;
     }
-  }
-  
-  .card-shadowed{
+}
+
+.card-shadowed {
     box-shadow: 0 2px 6px 3px rgba(53, 58, 57, 0.09);
-    border:0px;
+    border: 0px;
+}
 
-  }
-
-  .header-img{
+.header-img {
     width: 100%;
     object-fit: cover;
-  }
-  .img-super{
-      object-fit: cover;
-      border-radius: 3em;
-      box-shadow: 0 2px 6px 3px rgba(53, 58, 57, 0.09);
-      margin: 1em;   
-      width: 100%;
-       
-  }
+}
 
-  /* shimmer effect */
-  .shimmer{
+.img-super {
+    object-fit: cover;
+    border-radius: 3em;
+    box-shadow: 0 2px 6px 3px rgba(53, 58, 57, 0.09);
+    margin: 1em;
+    width: 100%;
+}
+
+/* shimmer effect */
+
+.shimmer {
     /* styling stuff */
-    font-family:"Alegreya Sans";
-    font-weight:300;
-    font-size:3em;
-    margin:0 auto;
+    font-family: "Alegreya Sans";
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0 auto;
     padding: 0 40px;
     text-align: center;
-    color: rgba(255,255,255,0.1);
+    color: rgba(255, 255, 255, 0.1);
 }
+
 .shimmer {
-  /* the shimmer magic */
-  background: -webkit-gradient(linear,left top,right top,from(#222),to(#222),color-stop(.5,#fff));
-  background: -moz-gradient(linear,left top,right top,from(#222),to(#222),color-stop(.5,#fff));
-  background: gradient(linear,left top,right top,from(#222),to(#222),color-stop(.5,#fff));
-  -webkit-background-size: 125px 100%;
-  -moz-background-size: 125px 100%;
-  background-size: 125px 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation-name: shimmer;
-  -moz-animation-name: shimmer;
-  -webkit-animation-name: shimmer;
-  animation-name: shimmer;
-  -webkit-animation-duration: 2s;
-  -moz-animation-duration: 2s;
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
-  -webkit-animation-iteration-count: infinite;
-  -moz-animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite;
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  background-color: #222;
+    /* the shimmer magic */
+    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(.5, #fff));
+    background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(.5, #fff));
+    background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(.5, #fff));
+    -webkit-background-size: 125px 100%;
+    -moz-background-size: 125px 100%;
+    background-size: 125px 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-animation-name: shimmer;
+    -moz-animation-name: shimmer;
+    -webkit-animation-name: shimmer;
+    animation-name: shimmer;
+    -webkit-animation-duration: 2s;
+    -moz-animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-color: #222;
 }
+
 @-moz-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
 }
+
 @-webkit-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
 }
+
 @-o-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
 }
+
 @-ms-keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
 }
+
 @keyframes shimmer {
-  0% {
-    background-position: top left;
-  }
-  100% {
-    background-position: top right;
-  }
+    0% {
+        background-position: top left;
+    }
+    100% {
+        background-position: top right;
+    }
 }
 
-body{
-   /* background-color:  #f5f7f9; */
-   background-color:  #fafafa;
-   
+body {
+    /* background-color:  #f5f7f9; */
+    background-color: #fafafa;
+    font-family: 'Inter UI',sans-serif;
 }
 
-.img-round{
+.img-round {
     border-radius: 1em;
 }
 
-@media (max-width: 360px) {  
-   
-
-    .img-banner{
+@media (max-width: 360px) {
+    .img-banner {
         object-fit: cover;
         width: 100%;
         height: 100px;
     }
-  }
+}
 
-@media (max-width: 575px) {  
-   
-
-    .img-banner{
+@media (max-width: 575px) {
+    .img-banner {
         object-fit: cover;
         width: 100%;
         height: 340px;
     }
-  }
+}
 
-@media (min-width: 576px) {  
-    .card-columns {column-count: 2;}
-
-    .img-banner{
+@media (min-width: 576px) {
+    .card-columns {
+        column-count: 2;
+    }
+    .img-banner {
         object-fit: cover;
         width: 100%;
         height: 340px;
     }
-  }
+}
 
-  @media (min-width: 768px) {  
-    .card-columns {column-count: 3;}
-
-    .img-banner{
+@media (min-width: 768px) {
+    .card-columns {
+        column-count: 3;
+    }
+    .img-banner {
         object-fit: cover;
         width: 100%;
         height: 400px;
     }
-  }
-  
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 1200px) { 
-   .card-columns {column-count: 3;}
-
-   .img-banner{
-    object-fit: cover;
-    width: 100%;
-    height: 540px;
 }
-  }
 
-  .row {
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 1200px) {
+    .card-columns {
+        column-count: 3;
+    }
+    .img-banner {
+        object-fit: cover;
+        width: 100%;
+        height: 540px;
+    }
+}
+
+.row {
     margin-left: 0;
     margin-right: 0;
-  }
-   
+}
 
-  
+.bg-yellow {
+    background: #FFAD00;
+}
 
+.bg-red {
+    background: #F12E0A;
+}
+
+.bg-blue {
+    background: #1678F9;
+}
+
+.bg-green {
+    background: #1DC691;
+}
+
+
+
+.bg-black {
+    background: #070C0F;
+}
+
+.bg-black-blue {
+    background:#1D252D;
+}
+
+.bg-light-grey {
+    background:#F5F5F5;
+}
+
+.bg-snow {
+    background:#FCFAFC;
+}
+
+
+.text-black {
+    color: #070C0F;
+}
+
+.text-black-blue {
+    color:#1D252D;
+}
+
+.text-light-grey {
+    color:#F5F5F5;
+}
+
+.text-snow {
+    color:#FCFAFC;
+}
+
+h1{
+    font-size: 3.75rem;
+    font-weight: 800;
+    font-family: 'Inter UI', sans-serif;
+    letter-spacing: -0.15px;
+}
+
+h6{
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Inter UI', sans-serif;
+    letter-spacing: -0.15rem;
+}

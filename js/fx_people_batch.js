@@ -108,7 +108,7 @@ $(function () {
 
 
         for (var i = 0; i < people.length; i++) {
-            out1 += '<div class="card item " style="background-color: transparent; border:0px;">'
+            out1 += '<a href="people-profile.html"><div class="card item " style="background-color: transparent; border:0px;">'
                 + '<div class="box">'
                 + '<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle lazy" src="img/face-profile.svg" data-src="' + people[i].imgurl + ' ">'
                 + ' <h4 class="name">' + people[i].name + '</h4>'
@@ -120,7 +120,7 @@ $(function () {
 
         }
 
-        out1+= '</div></div></div>';
+        out1+= '</div></div></a></div>';
 
 
 
