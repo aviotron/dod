@@ -32,7 +32,7 @@
 
   <!-- nav starts -->
   <div class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light navtop sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navtop sticky-top nav" id="global-nav" >
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="img/iitg_logo.png.png" width="30" height="30" alt="">
@@ -83,7 +83,12 @@
     <!-- nav ends -->
     <div class="colorline "></div>
   </div>
+
+
+
   <!-- nav ends -->
+ 
+
 
   <header>
 
@@ -165,9 +170,9 @@
                 <div class="carousel-inner">
                   <div class="carousel-item active ">
                     <a href="people.html">
-                      <img src="https://nenow.in/wp-content/uploads/2018/02/PITOLOI.jpg"
-                        class="d-block w-100 rounded-5px" alt="...">
-                      <div class="carousel-caption">
+                      <img src="https://nenow.in/wp-content/uploads/2018/02/PITOLOI.jpg" class="d-block w-100 rounded-5px bg-overlay"
+                        alt="...">
+                      <div class="carousel-caption bg-overlay">
                         <h4>Ranjan Bordoli won Red Dot Award</h4>
                         <p class="small d-none">Good News for Us</p>
                       </div>
@@ -218,7 +223,7 @@
 
             </div>
             <div class="col-12">
-              <ul class="list-group list-group-flush">
+              <ul class="list-group list-group-flush nav-stacked affix-top" data-spy="affix">
                 <li class="list-group-item"><a href="news_details.html">Call Letter for Presentation and Interview for
                     IPDF</a><br>
                   <span class="sub-text">23 FEB</span></li>
@@ -348,12 +353,24 @@
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
-    integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
-    integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
     crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      var scrollTop = 0;
+      $(window).scroll(function () {
+        scrollTop = $(window).scrollTop();
+        $('.counter').html(scrollTop);
+        if (scrollTop >= 100) {
+          $('#global-nav').addClass('scrolled-nav');
+        } else if (scrollTop < 100) {
+          $('#global-nav').removeClass('scrolled-nav');
+        }
+      });
+    });
+  </script>
 
 
 

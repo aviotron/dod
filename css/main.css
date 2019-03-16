@@ -10,24 +10,31 @@
 
 @supports (font-variation-settings: normal) {
     html {
-        font-family: 'Inter UI var alt', sans-serif;
+        font-family: 'roboto', sans-serif;
     }
 }
 
-h1, h2, h3 {
-    font-family: 'Manrope', sans-serif;
-    font-weight: 900;
-    color: #373b48;
-}
-
-h4, h5, h6 {
-    font-family: 'Manrope', sans-serif;
+h1,
+h2,
+h3 {
+    font-family: 'Objectivity', sans-serif;
     font-weight: 700;
     color: #373b48;
 }
 
-p, a, div, span {
-    font-family: 'Inter UI', sans-serif;
+h4,
+h5,
+h6 {
+    font-family: 'Objectivity', sans-serif;
+    font-weight: 700;
+    color: #373b48;
+}
+
+p,
+a,
+div,
+span {
+    font-family: 'roboto', sans-serif;
     color: #5f6368;
 }
 
@@ -72,7 +79,7 @@ a {
     background: -o-linear-gradient(left, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
     background: -ms-linear-gradient(left, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
     background: linear-gradient(to right, rgba(246, 129, 33, 1) 0%, rgba(0, 167, 97, 1) 25%, rgba(0, 85, 153, 1) 50%, rgba(153, 26, 151, 1) 75%, rgba(128, 0, 21, 1) 99%, rgba(128, 0, 21, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f68121', endColorstr='#800015', GradientType=1);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f68121', endColorstr='#800015', GradientType=1);
     width: 100%;
     height: 2px;
     -webkit-animation: AnimationName 2s ease infinite;
@@ -84,9 +91,11 @@ a {
     0% {
         background-position: 0% 13%
     }
+
     50% {
         background-position: 100% 88%
     }
+
     100% {
         background-position: 0% 13%
     }
@@ -96,9 +105,11 @@ a {
     0% {
         background-position: 0% 13%
     }
+
     50% {
         background-position: 100% 88%
     }
+
     100% {
         background-position: 0% 13%
     }
@@ -108,9 +119,11 @@ a {
     0% {
         background-position: 0% 13%
     }
+
     50% {
         background-position: 100% 88%
     }
+
     100% {
         background-position: 0% 13%
     }
@@ -130,9 +143,11 @@ a {
     0% {
         background-position: 0% 13%
     }
+
     50% {
         background-position: 100% 88%
     }
+
     100% {
         background-position: 0% 13%
     }
@@ -142,9 +157,11 @@ a {
     0% {
         background-position: 0% 13%
     }
+
     50% {
         background-position: 100% 88%
     }
+
     100% {
         background-position: 0% 13%
     }
@@ -154,9 +171,11 @@ a {
     0% {
         background-position: 0% 13%
     }
+
     50% {
         background-position: 100% 88%
     }
+
     100% {
         background-position: 0% 13%
     }
@@ -189,6 +208,7 @@ a {
         font-weight: 300;
         line-height: 1.2;
     }
+
     .dod {
         color: #fff;
         font-family: 'Lato', sans-serif;
@@ -235,7 +255,7 @@ a {
 
 .navtab .nav-link {
     color: #5f6368;
-    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Manrope', sans-serif; */
     transition: color 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -252,11 +272,12 @@ a {
 }
 
 .navtop a {
-    font-family: 'Manrope', sans-serif;
+    /* font-family: 'Objectivity', sans-serif; */
+    /* font-size:0.9rem; */
 }
 
 .navtop a .nav-link.active {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Objectivity', sans-serif;
     font-weight: bold;
 }
 
@@ -309,7 +330,7 @@ footer ul {
 }
 
 .footer-name {
-    font-family: Inter UI;
+
     font-style: normal;
     font-weight: 800;
     color: #F95F5F;
@@ -322,7 +343,8 @@ footer ul {
 }
 
 .footer-address {
-    font-family: Inter UI;
+
+    /* font-family: Inter UI; */
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -331,7 +353,7 @@ footer ul {
 }
 
 .footer-link-head {
-    font-family: Inter UI;
+    /* font-family: Inter UI; */
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -340,7 +362,7 @@ footer ul {
 }
 
 .footer-link-link {
-    font-family: Inter UI;
+    /* font-family: Inter UI; */
     font-style: normal;
     font-weight: normal;
     line-height: normal;
@@ -360,7 +382,8 @@ footer ul {
     border-radius: 50%;
 }
 
-.container-fluid, .row {
+.container-fluid,
+.row {
     margin: 0;
     padding: 0;
 }
@@ -446,6 +469,7 @@ footer ul {
     0% {
         background-position: -468px 0
     }
+
     100% {
         background-position: 468px 0
     }
@@ -464,7 +488,10 @@ footer ul {
     position: relative;
 }
 
-#top, #bottom, #left, #right {
+#top,
+#bottom,
+#left,
+#right {
     background: linear-gradient(273deg, #f68121, #00a761, #005599, #991a97, #800015);
     background-size: 1000% 1000%;
     -webkit-animation: AnimationName 10s ease infinite;
@@ -473,7 +500,8 @@ footer ul {
     position: fixed;
 }
 
-#left, #right {
+#left,
+#right {
     top: 0;
     bottom: 0;
     width: 2px;
@@ -487,7 +515,8 @@ footer ul {
     right: 0;
 }
 
-#top, #bottom {
+#top,
+#bottom {
     left: 0;
     right: 0;
     height: 2px;
@@ -527,6 +556,7 @@ footer ul {
     from {
         background-position: 0 0;
     }
+
     to {
         background-position: -400px 0;
     }
@@ -554,9 +584,11 @@ footer ul {
         letter-spacing: -0.1em;
         opacity: 0;
     }
+
     40% {
         opacity: 0.6;
     }
+
     100% {
         opacity: 1;
     }
@@ -567,9 +599,11 @@ footer ul {
         letter-spacing: -0.1em;
         opacity: 0;
     }
+
     40% {
         opacity: 0.6;
     }
+
     100% {
         opacity: 1;
     }
@@ -595,94 +629,12 @@ footer ul {
 
 /* shimmer effect */
 
-.shimmer {
-    /* styling stuff */
-    font-family: "Alegreya Sans";
-    font-weight: 300;
-    font-size: 3em;
-    margin: 0 auto;
-    padding: 0 40px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.1);
-}
 
-.shimmer {
-    /* the shimmer magic */
-    background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(.5, #fff));
-    background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(.5, #fff));
-    background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(.5, #fff));
-    -webkit-background-size: 125px 100%;
-    -moz-background-size: 125px 100%;
-    background-size: 125px 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    -webkit-animation-name: shimmer;
-    -moz-animation-name: shimmer;
-    -webkit-animation-name: shimmer;
-    animation-name: shimmer;
-    -webkit-animation-duration: 2s;
-    -moz-animation-duration: 2s;
-    -webkit-animation-duration: 2s;
-    animation-duration: 2s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-color: #222;
-}
-
-@-moz-keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-    100% {
-        background-position: top right;
-    }
-}
-
-@-webkit-keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-    100% {
-        background-position: top right;
-    }
-}
-
-@-o-keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-    100% {
-        background-position: top right;
-    }
-}
-
-@-ms-keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-    100% {
-        background-position: top right;
-    }
-}
-
-@keyframes shimmer {
-    0% {
-        background-position: top left;
-    }
-    100% {
-        background-position: top right;
-    }
-}
 
 body {
     /* background-color:  #f5f7f9; */
-    background-color: #fafafa;
-    font-family: 'Inter UI',sans-serif;
+    /* background-color: #fafafa;
+    font-family: 'Inter UI', sans-serif; */
 }
 
 .img-round {
@@ -709,22 +661,31 @@ body {
     .card-columns {
         column-count: 2;
     }
+
     .img-banner {
         object-fit: cover;
         width: 100%;
         height: 340px;
     }
+    /* #global-nav{
+        height:5rem;
+    } */
 }
 
 @media (min-width: 768px) {
     .card-columns {
         column-count: 3;
     }
+
     .img-banner {
         object-fit: cover;
         width: 100%;
         height: 400px;
     }
+
+    /* #global-nav{
+        height:5.4rem;
+    } */
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -733,6 +694,7 @@ body {
     .card-columns {
         column-count: 3;
     }
+
     .img-banner {
         object-fit: cover;
         width: 100%;
@@ -768,15 +730,15 @@ body {
 }
 
 .bg-black-blue {
-    background:#1D252D;
+    background: #1D252D;
 }
 
 .bg-light-grey {
-    background:#F5F5F5;
+    background: #F5F5F5;
 }
 
 .bg-snow {
-    background:#FCFAFC;
+    background: #FCFAFC;
 }
 
 
@@ -785,18 +747,18 @@ body {
 }
 
 .text-black-blue {
-    color:#1D252D;
+    color: #1D252D;
 }
 
 .text-light-grey {
-    color:#F5F5F5;
+    color: #F5F5F5;
 }
 
 .text-snow {
-    color:#FCFAFC;
+    color: #FCFAFC;
 }
 
-h1{
+/* h1{
     font-size: 3.75rem;
     font-weight: 800;
     font-family: 'Inter UI', 'Google Sans', sans-serif;
@@ -808,9 +770,9 @@ h6{
     font-weight: bold;
     font-family: 'Inter UI', sans-serif;
     letter-spacing: -0.15rem;
-}
+} */
 
-@media (max-width:35em) {
+/* @media (max-width:35em) {
     h1{
         font-size: 3rem;
         font-weight: 800;
@@ -825,9 +787,59 @@ h6{
         font-family: 'Inter UI', sans-serif;
         letter-spacing: -0.15rem;
     }
-}
+} */
 
-.breadcrumb a{
+.breadcrumb a {
     font-size: 80%;
 }
 
+.bg-overlay {
+    background: -moz-linear-gradient(top, rgba(39, 174, 96,0.3), rgba(231, 76, 60,0.3));
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(39, 174, 96,0.3), rgba(231, 76, 60,0.3));
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,(top, rgba(39, 174, 96,0.3), rgba(231, 76, 60,0.3)));
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
+    /* IE6-9 */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.bg-no-overlay {
+    background: url("https://unsplash.imgix.net/photo-1416339442236-8ceb164046f8?q=75&fm=jpg&s=8eb83df8a744544977722717b1ea4d09");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 450px;
+    padding-top: 50px;
+}
+
+
+.bg-orchid-orange{
+    background: #EAB543;
+}
+
+.bg-blue-spiro-disco-ball{
+    background: #25CCF7;
+}
+
+.bg-yellow-honey-glow{
+    background: #EAB543;
+}
+
+.bg-teal-sweet-garden{
+    background: #55E6C1;
+}
+
+.bg-red-georgia-peach{
+    background:#FD7272;
+}
+
+.bg-grey-falling-star{
+    background:#CAD3C8;
+}
