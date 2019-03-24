@@ -95,3 +95,8 @@ min-height: 250px;
     padding:0.5em;
 }
 
+
+.header-people{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+
+}
