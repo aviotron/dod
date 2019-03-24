@@ -258,12 +258,13 @@ header {
 
   #section-latest{
       padding: 2rem 0 2rem 0;
+      background: linear-gradient(180deg, #FFFFFF 0%, #EEF1F0 100%);
 
   }
 
   #section-events{
     padding: 2rem 0 2rem 0;
-    background: linear-gradient(180deg, #FFFFFF 0%, #EEF1F0 100%);
+   
 
   }
 
@@ -300,23 +301,23 @@ header {
 
   .event-type{
     font-style: normal;
-    font-weight: 600;
+    font-weight: 300;
     font-size: 10px;
     line-height: normal;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
     background: #EB5757;
     border-radius: 18px;
     color: #ffffff;
-    padding: 0.6em;    
+    padding: 0.5em;    
   }
 
   .event{
-    box-shadow: 0px 4px 9px 3px #3d404429;
-    transition:box-shadow 0.3s ease;
+    box-shadow: 2px 4px 9px 3px #3d404415;
+    transition:box-shadow 0.5s ease;
    
   }
   .event:hover{
-    box-shadow: 0px 8px 9px 3px #3d404454;
+    box-shadow: 2px 4px 9px 9px #3d404415;
 
   }
