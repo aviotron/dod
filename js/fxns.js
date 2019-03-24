@@ -52,14 +52,26 @@ $(function () {
             out1 +='<div class="card item " style="    background-color: transparent; border:0px;" data-filter-item data-filter-name="'+people[i].name+'">'
             +'<div class="box">'
             +'<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="'+people[i].imgurl+'">'
-            +' <h4 class="name">'+people[i].name+'</h4>'
-            +'<p class="title">'+people[i].designation+'</p>'
-            +'<p class="description ellipsise ">'+people[i].interest_areas+'</p>'
+            +' <h5 class="name">'+people[i].name+'</h5>'
+            +'<p class="subtitle">'+people[i].designation+'</p>'
+            // +'<p class="description ellipsise ">'+people[i].interest_areas+'</p>'
             +'<div class="social"><a href="'+people[i].portfolio+'"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div></div></div>'
 
 
 
         }
+
+        // for (var i = 0; i < people.length; i++) {
+        
+        //     out1+=' <div class="col-md-4 col-lg-3 mb-2 mb-sm-4">'
+        //     +' <img src="'+people[i].imgurl+'" alt="" class="w-100" style="height: auto; object-fit:cover;" width="160" height="160" >'+
+            
+        //     +'  <p>'+people[i].name+'</p>'
+        //     +' <div class="small">'+people[i].designation+'</div></div>'
+           
+        // }
+
+
         document.getElementById('faculty_list').innerHTML = out1;
        
 
