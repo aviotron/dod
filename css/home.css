@@ -313,12 +313,44 @@ header .overlay {
 }
 
 .event {
-    box-shadow: 2px 4px 9px 3px #3d404415;
-    transition: box-shadow 0.5s ease;
+    filter: drop-shadow(0 0 10px rgba(51, 51, 51, 0.178));
+    
+   
 
 }
 
 .event:hover {
-    box-shadow: 2px 4px 9px 9px #3d404415;
+ 
 
 }
+
+.event img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    
+}
+
+.event-primary img{
+    height: 20rem;
+}
+
+.event-secondary img{
+   
+}
+
+.event-bg{
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.path{
+    stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
