@@ -22,18 +22,18 @@
        {
             var p=new Object();
            var entry=value_array[i];
-            p.type = entry[i];
-            p.name = entry[i + 1] ;
-            p.id = entry[i + 2] ;
-            p.username = entry[i + 3] ;
-            p.email_01 = entry[i + 4] ;
-            p.portfolio = entry[i + 5] ;
-            p.interest_areas = entry[i + 6] ;
-            p.designation = entry[i + 7] ;
-            p.phone_01 = entry[i + 8] ;
-            p.phone_02 = entry[i + 9] ;
-            p.imgurl = entry[i + 10] ;
-            p.groupid = entry[i + 11] ;
+            p.type = entry[0];
+            p.name = entry[1] ;
+            p.id = entry[2] ;
+            p.username = entry[3] ;
+            p.email_01 = entry[4] ;
+            p.portfolio = entry[5] ;
+            p.interest_areas = entry[6] ;
+            p.designation = entry[7] ;
+            p.phone_01 = entry[8] ;
+            p.phone_02 = entry[9] ;
+            p.imgurl = entry[10] ;
+            p.groupid = entry[11] ;
             people.push(p);
            
        }
