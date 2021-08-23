@@ -1,19 +1,27 @@
 
-$(function () {
+
     var api_key='AIzaSyCbUYf0QIevZMDVR-eOkkFOBfvjars6DVY';
-    // document.getElementById('faculty_list').innerHTML='';
-    var newsheetUrl='https://sheets.googleapis.com/v4/spreadsheets/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/values/People_faculty?alt=json&key='+api_key;
-    var sheetUrl = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/1/public/full?alt=json';
-    var sheetUrlGroups = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/5/public/full?alt=json';
-    $.getJSON(newsheetUrl, function (data) {
-        var entry = data.values;
+    var sheet_id='1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU';
+    var tab_name='People_faculty';
+   
+    var facultyRepoURL='https://sheets.googleapis.com/v4/spreadsheets/'
+    +sheet_id+'/values/'
+    +tab_name+'?alt=json&key='
+    +api_key;
 
-
-
-        var people = [];
-        for (var i = 12; i < entry.length; i = i + 12) {
-            // entry[i].content.$t retrieves the content of each cell
-            var p = new Object();
+    fetch(facultyRepoURL)
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+       
+       var value_array = data.values;
+      
+       var people = [];
+       for(var i=1; i<value_array.length;i=i+1)
+       {
+            var p=new Object();
+           var entry=value_array[i];
             p.type = entry[i];
             p.name = entry[i + 1] ;
             p.id = entry[i + 2] ;
@@ -26,11 +34,58 @@ $(function () {
             p.phone_02 = entry[i + 9] ;
             p.imgurl = entry[i + 10] ;
             p.groupid = entry[i + 11] ;
-
             people.push(p);
+           
+       }
+       appendData(people);
+    })
+    .catch(function (err) {
+        console.log('error: ' + err);
+    });
 
 
+
+    function appendData(people) {
+        var out1='';    
+        for (var i = 0; i < people.length; i++) {
+            out1 +='<div class="card item " style="    background-color: transparent; border:0px;" data-filter-item data-filter-name="'+people[i].name+'">'
+            +'<div class="box">'
+            +'<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="'+people[i].imgurl+'">'
+            +' <h5 class="name">'+people[i].name+'</h5>'
+            +'<p class="subtitle">'+people[i].designation+'</p>'
+            // +'<p class="description ellipsise ">'+people[i].interest_areas+'</p>'
+            +'<div class="social"><a href="'+people[i].portfolio+'"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div></div></div>';
         }
+        document.getElementById('faculty_list').innerHTML = out1;
+    }
+    // var api_key='AIzaSyCbUYf0QIevZMDVR-eOkkFOBfvjars6DVY';
+    // // document.getElementById('faculty_list').innerHTML='';
+    // var newsheetUrl='https://sheets.googleapis.com/v4/spreadsheets/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/values/People_faculty?alt=json&key='+api_key;
+    // var sheetUrl = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/1/public/full?alt=json';
+    // var sheetUrlGroups = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/5/public/full?alt=json';
+    // $.getJSON(newsheetUrl, function (data) {
+    //     var entry = data.values;
+
+
+
+    //     var people = [];
+    //     for (var i = 12; i < entry.length; i = i + 12) {
+    //         // entry[i].content.$t retrieves the content of each cell
+    //         var p = new Object();
+    //         p.type = entry[i];
+    //         p.name = entry[i + 1] ;
+    //         p.id = entry[i + 2] ;
+    //         p.username = entry[i + 3] ;
+    //         p.email_01 = entry[i + 4] ;
+    //         p.portfolio = entry[i + 5] ;
+    //         p.interest_areas = entry[i + 6] ;
+    //         p.designation = entry[i + 7] ;
+    //         p.phone_01 = entry[i + 8] ;
+    //         p.phone_02 = entry[i + 9] ;
+    //         p.imgurl = entry[i + 10] ;
+    //         p.groupid = entry[i + 11] ;
+    //         people.push(p);
+    //     }
 
         // var out = '<ul class="list-group list-group-flush option animated fadeInUp">';
         // for (var i = 0; i < people.length; i++) {
@@ -49,19 +104,19 @@ $(function () {
         // }
         // out += '</ul>';
 
-        var out1='';    
-        for (var i = 0; i < people.length; i++) {
-            out1 +='<div class="card item " style="    background-color: transparent; border:0px;" data-filter-item data-filter-name="'+people[i].name+'">'
-            +'<div class="box">'
-            +'<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="'+people[i].imgurl+'">'
-            +' <h5 class="name">'+people[i].name+'</h5>'
-            +'<p class="subtitle">'+people[i].designation+'</p>'
-            // +'<p class="description ellipsise ">'+people[i].interest_areas+'</p>'
-            +'<div class="social"><a href="'+people[i].portfolio+'"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div></div></div>'
+        // var out1='';    
+        // for (var i = 0; i < people.length; i++) {
+        //     out1 +='<div class="card item " style="    background-color: transparent; border:0px;" data-filter-item data-filter-name="'+people[i].name+'">'
+        //     +'<div class="box">'
+        //     +'<img style="object-fit:cover;" height="140px" width="140px" class="rounded-circle" src="'+people[i].imgurl+'">'
+        //     +' <h5 class="name">'+people[i].name+'</h5>'
+        //     +'<p class="subtitle">'+people[i].designation+'</p>'
+        //     // +'<p class="description ellipsise ">'+people[i].interest_areas+'</p>'
+        //     +'<div class="social"><a href="'+people[i].portfolio+'"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div></div></div>'
 
 
 
-        }
+        // }
 
         // for (var i = 0; i < people.length; i++) {
         
@@ -74,7 +129,7 @@ $(function () {
         // }
 
 
-        document.getElementById('faculty_list').innerHTML = out1;
+        // document.getElementById('faculty_list').innerHTML = out1;
        
 
     })
@@ -121,8 +176,6 @@ $(function () {
 
     })
 
-   
-});
 
 
 /*
