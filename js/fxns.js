@@ -14,18 +14,18 @@ $(function () {
         for (var i = 12; i < entry.length; i = i + 12) {
             // entry[i].content.$t retrieves the content of each cell
             var p = new Object();
-            p.type = entry[i].content.$t;
-            p.name = entry[i + 1].content.$t;
-            p.id = entry[i + 2].content.$t;
-            p.username = entry[i + 3].content.$t;
-            p.email_01 = entry[i + 4].content.$t;
-            p.portfolio = entry[i + 5].content.$t;
-            p.interest_areas = entry[i + 6].content.$t;
-            p.designation = entry[i + 7].content.$t;
-            p.phone_01 = entry[i + 8].content.$t;
-            p.phone_02 = entry[i + 9].content.$t;
-            p.imgurl = entry[i + 10].content.$t;
-            p.groupid = entry[i + 11].content.$t;
+            p.type = entry[i];
+            p.name = entry[i + 1] ;
+            p.id = entry[i + 2] ;
+            p.username = entry[i + 3] ;
+            p.email_01 = entry[i + 4] ;
+            p.portfolio = entry[i + 5] ;
+            p.interest_areas = entry[i + 6] ;
+            p.designation = entry[i + 7] ;
+            p.phone_01 = entry[i + 8] ;
+            p.phone_02 = entry[i + 9] ;
+            p.imgurl = entry[i + 10] ;
+            p.groupid = entry[i + 11] ;
 
             people.push(p);
 
