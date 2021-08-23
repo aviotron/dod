@@ -6,7 +6,7 @@ $(function () {
     var sheetUrl = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/1/public/full?alt=json';
     var sheetUrlGroups = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/5/public/full?alt=json';
     $.getJSON(newsheetUrl, function (data) {
-        var entry = data.feed.entry;
+        var entry = data.values;
 
 
 
