@@ -1,9 +1,11 @@
 
 $(function () {
+    var api_key='AIzaSyCbUYf0QIevZMDVR-eOkkFOBfvjars6DVY';
     // document.getElementById('faculty_list').innerHTML='';
+    var newsheetUrl='https://sheets.googleapis.com/v4/spreadsheets/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/values/People_faculty?alt=json&key='+api_key;
     var sheetUrl = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/1/public/full?alt=json';
     var sheetUrlGroups = 'https://spreadsheets.google.com/feeds/cells/1SujNKoLqCsSBCAjhRb_fHjiL7CQhT2AVHa2nOy5S6FU/5/public/full?alt=json';
-    $.getJSON(sheetUrl, function (data) {
+    $.getJSON(newsheetUrl, function (data) {
         var entry = data.feed.entry;
 
 
