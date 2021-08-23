@@ -134,47 +134,47 @@
 
     
 
-    $.getJSON(sheetUrlGroups, function (data){
-        var entry = data.feed.entry;
-        var current_student_batches = [];
-        for (var i = 4; i < entry.length; i = i + 4)
-        { var g=new Object();
-            g.id=entry[i].content.$t;
-            g.imgurl=entry[i+1].content.$t;
-            g.name=entry[i+2].content.$t;
-            current_student_batches.push(g);
-        }
+    // $.getJSON(sheetUrlGroups, function (data){
+    //     var entry = data.feed.entry;
+    //     var current_student_batches = [];
+    //     for (var i = 4; i < entry.length; i = i + 4)
+    //     { var g=new Object();
+    //         g.id=entry[i].content.$t;
+    //         g.imgurl=entry[i+1].content.$t;
+    //         g.name=entry[i+2].content.$t;
+    //         current_student_batches.push(g);
+    //     }
 
-        var student_batch='';
+    //     var student_batch='';
 
-        for (var i = 0; i < current_student_batches.length; i++) {
-                student_batch+=
-                '<div class="col-lg-6 col-sm-12 animated fadeInUp" >'
-               +
-                '<a href="people_batch.html?id='+current_student_batches[i].id+'" style="cursor:pointer;">'
-                +
-                    '<div class="photo-card">'
-                    +
-                        '<div id="batch_pic" class="photo-background" style="background-image: url('+current_student_batches[i].imgurl+');"></div>'
-                        +
-                        '<div class="photo-details">'
-                        +
-                            '<h2 id="batch_name">'+current_student_batches[i].name+'</h2>'
-                            +
-                       ' </div>'
-                       +
-                   ' </div>'
-                   +
-                '</a>'
-                +
-           ' </div>'
-        }
-        document.getElementById('student_batch_list').innerHTML = student_batch;
-
-
+    //     for (var i = 0; i < current_student_batches.length; i++) {
+    //             student_batch+=
+    //             '<div class="col-lg-6 col-sm-12 animated fadeInUp" >'
+    //            +
+    //             '<a href="people_batch.html?id='+current_student_batches[i].id+'" style="cursor:pointer;">'
+    //             +
+    //                 '<div class="photo-card">'
+    //                 +
+    //                     '<div id="batch_pic" class="photo-background" style="background-image: url('+current_student_batches[i].imgurl+');"></div>'
+    //                     +
+    //                     '<div class="photo-details">'
+    //                     +
+    //                         '<h2 id="batch_name">'+current_student_batches[i].name+'</h2>'
+    //                         +
+    //                    ' </div>'
+    //                    +
+    //                ' </div>'
+    //                +
+    //             '</a>'
+    //             +
+    //        ' </div>'
+    //     }
+    //     document.getElementById('student_batch_list').innerHTML = student_batch;
 
 
-    });
+
+
+    // });
 
 
 
