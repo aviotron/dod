@@ -37,6 +37,7 @@
             people.push(p);
            
        }
+       console.log(people);
        appendData(people);
     })
     .catch(function (err) {
