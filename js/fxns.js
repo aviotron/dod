@@ -132,7 +132,7 @@
         // document.getElementById('faculty_list').innerHTML = out1;
        
 
-    })
+    
 
     $.getJSON(sheetUrlGroups, function (data){
         var entry = data.feed.entry;
@@ -174,7 +174,7 @@
 
 
 
-    })
+    });
 
 
 
