@@ -44,7 +44,7 @@
             people.push(p);
            
        }
-       console.log(people);
+      
        appendDataFaculty(people);
     })
     .catch(function (err) {
@@ -71,8 +71,8 @@
             current_student_batches.push(g);
            
        }
-       console.log(people);
-       appendDataFaculty(people);
+     
+       appendDataBatches(current_student_batches);
     })
     .catch(function (err) {
         console.log('error: ' + err);
